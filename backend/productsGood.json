@@ -1,0 +1,279 @@
+{
+    "products": [{
+        "Merluza": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Merluza",
+            "img": "https://cadenaser00.epimg.net/emisora/imagenes/2017/06/02/radio_lugo/1496402199_089632_1496410938_noticia_normal.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Bacalao": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Bacalao",
+            "img": "https://elmercadodelpescado.com/wp-content/uploads/2020/04/bacalao-fresco-el-pedrillo1-scaled.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Dorada": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Dorada",
+            "img": "https://pescaderiaonline.es/wp-content/uploads/2019/11/comprar-dorada-salvaje-mar-pescaderia-online-1.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Gallo": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Gallo",
+            "img": "https://www.pescaderiamunicio.es/wp-content/uploads/2016/09/gallo-filetes.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Rape": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Gallo",
+            "img": "https://www.pescaderiaespe.com/wp-content/uploads/2019/10/rape.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Besugo": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Besugo",
+            "img": "https://pezera.es/wp-content/uploads/2019/10/Besugo-3.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Capracho": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Capracho",
+            "img": "https://imagenes.heraldo.es/files/image_990_v1/uploads/imagenes/2014/08/04/_foto1_492a1ee1.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Lubina": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Lubina",
+            "img": "https://pescaderiaonline.es/wp-content/uploads/2019/11/comprar-lubina-salvaje-mar-pescaderia-online.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Rodaballo": {
+            "type": "fish",
+            "subType": "white",
+            "name": "Rodaballo",
+            "img": "https://tupescaderia.es/wp-content/uploads/2012/06/Rodaballo_570.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Atún": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Atún",
+            "img": "https://tupescaderia.es/wp-content/uploads/2012/06/Atun_570.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Boquerones": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Boquerones",
+            "img": "https://delmaralplato.es/wp-content/uploads/2016/01/BOQUERON.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Chicharro": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Chicharro",
+            "img": "https://www.delmercadoatumesa.es/wp-content/uploads/2016/03/Jureles-2.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Pez espada": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Pez espada",
+            "img": "https://www.pescaderiascorunesas.es/tienda-online/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/e/pez_espada_edit_2.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Salmón": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Salmón",
+            "img": "https://www.delmercadoatumesa.es/wp-content/uploads/2016/09/Salm%C3%B3n-1.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Salmonete": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Salmonete",
+            "img": "https://frescoydelmar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/a/salmonetes_de_fresco_y_del_mar.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Sardinas": {
+            "type": "fish",
+            "subType": "blue",
+            "name": "Sardinas",
+            "img": "https://imagenes.heraldo.es/files/image_990_v1/uploads/imagenes/2013/07/01/_sardinas0695_953b7b28.jpg",
+            "price": 10,
+            "isFish": true
+        },
+        "Almejas": {
+            "type": "shellfish",
+            "subType": "mollusck",
+            "name": "Almejas",
+            "img": "https://pescaderiaslosalonso.com/wp-content/uploads/2020/06/almeja-gorda-viva.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Berberechos": {
+            "type": "shellfish",
+            "subType": "mollusck",
+            "name": "Berberechos",
+            "img": "https://tupescaderia.es/wp-content/uploads/2012/06/Berberechos_570.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Chirlas": {
+            "type": "shellfish",
+            "subType": "mollusck",
+            "name": "Chirlas",
+            "img": "https://www.mercado47.com/Files/Images/References/2018/03/a774e439-cb46-463e-9f54-ad72343868dd/aef6e766-cb5c-475d-b7c0-49ab7637477d.png",
+            "price": 10,
+            "isFish": false
+        },
+        "Mejillón": {
+            "type": "shellfish",
+            "subType": "mollusck",
+            "name": "Mejillón",
+            "img": "https://tupescaderia.es/wp-content/uploads/2012/06/Mejillon_Roca570.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Navajas": {
+            "type": "shellfish",
+            "subType": "mollusck",
+            "name": "Navajas",
+            "img": "https://static.ulabox.com/media/74125_l1.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Zamburiñas": {
+            "type": "shellfish",
+            "subType": "mollusck",
+            "name": "Zamburiñas",
+            "img": "https://elmaralpunto.com/wp-content/uploads/2019/07/Zamburin%CC%83a.png",
+            "price": 10,
+            "isFish": false
+        },
+        "Langostino": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Langostino",
+            "img": "https://tupescaderia.es/wp-content/uploads/2012/06/LANGOSTINO_570.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Langostino-cocido": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Langostino cocido",
+            "img": "https://atcciomar.es/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-12-at-21.48.37.jpeg",
+            "price": 10,
+            "isFish": false
+        },
+        "Gamba-roja": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Gamba roja",
+            "img": "https://elmercadodelpescado.com/wp-content/uploads/2019/11/gambas_rojas_garrucha_gordas_el_trasmallo.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Cigalas": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Cigalas",
+            "img": "https://pescadosymariscossantana.com/484-large_default/cigala-fresca-de-huelva-cigalas-grandes-mariscos-pescaderia-online.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Bogavante": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Bogavante",
+            "img": "https://aptcrecetas.elcorteingles.es/supermercado/aptc/images/aptc/19914/bogavante_3.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Centollo": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Centollo",
+            "img": "https://pezera.es/wp-content/uploads/2020/04/comprar-centollo-cocido.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Necora": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Nécora",
+            "img": "https://tupescaderia.es/wp-content/uploads/2012/06/NECORA_570.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Cangrejo-rojo": {
+            "type": "shellfish",
+            "subType": "crustacean",
+            "name": "Cangrejo rojo",
+            "img": "http://www.mercadodeveronicas.es/archivos/productos_imagenes_275_55b-cangrejo_rojo_detalle.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Pulpo": {
+            "type": "cephalopod",
+            "name": "Pulpo",
+            "img": "https://www.mercado47.com/Files/Images/References/2018/03/5e5875fc-ef56-47c3-a3de-829476d6db41/7f93e711-b915-4d15-a225-7fc8a8d0cb44.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Sepia": {
+            "type": "cephalopod",
+            "name": "Sepia",
+            "img": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118257800047____2__600x600.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Chipirón": {
+            "type": "cephalopod",
+            "name": "Chipirón",
+            "img": "https://s3.eu-west-2.amazonaws.com/mentta/producto/chipirones-2.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Chipironcitos": {
+            "type": "cephalopod",
+            "name": "Chipironcitos",
+            "img": "https://s3.eu-west-2.amazonaws.com/mentta/producto/chipiron-4.jpg",
+            "price": 10,
+            "isFish": false
+        },
+        "Calamar": {
+            "type": "cephalopod",
+            "name": "Calamar",
+            "img": "https://www.peixacasa.cat/wp-content/uploads/2018/02/calamar-del-norte-peix-a-casa.jpg",
+            "price": 10,
+            "isFish": false
+        }
+    }]
+}

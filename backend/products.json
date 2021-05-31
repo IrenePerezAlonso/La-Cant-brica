@@ -1,0 +1,129 @@
+{
+	"products": [
+		{
+			"fish": [
+				{
+					"white": [
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"entire": false,
+								"withOutHeadGuts": false,
+								"withOutThorn": false,
+								"fillet": false,
+								"slices":false
+							}
+						},
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"entire": false,
+								"withOutHeadGuts": false,
+								"withOutThorn": false,
+								"fillet": false,
+								"slices":false
+							}
+						}
+
+					]
+				},
+				{
+					"blue": [
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"entire": false,
+								"withOutHeadGuts": false,
+								"withOutThorn": false,
+								"fillet": false,
+								"slices":false
+							}
+						},
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"entire": false,
+								"withOutHeadGuts": false,
+								"withOutThorn": false,
+								"fillet": false,
+								"slices":false
+							}
+						}
+
+					]	
+				}
+			]
+		},
+		{
+			"shellFish": [
+				{
+					"mollusck": [
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"fresh": false,
+								"cooked": false
+							}
+						},
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"fresh": false,
+								"cooked": false
+							}
+						}
+
+					]
+				},
+				{
+					"crustacean": [
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"fresh": false,
+								"cooked": false
+							}
+						},
+						{
+							"name": "",
+							"img": "",
+							"price": 1,
+							"preparation": {
+								"fresh": false,
+								"cooked": false
+							}
+						}
+
+					]	
+				}
+			]
+		},
+		{
+			"cephalopod": [
+				{
+					"name": "",
+					"img": "",
+					"price": 1,
+					"preparation": {
+						"fresh": false,
+						"cooked": false
+					}
+				}
+			]
+		}
+	]
+}
