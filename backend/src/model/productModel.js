@@ -1,14 +1,20 @@
 const { model, Schema }  = require('mongoose');
 
 const productsSchema = Schema({
-	products:{
 		type: String,
 		subType: String,
 		name: String,
 		img: String,
 		price: Number,
-		isFish: Boolean
-	}
+		preparation: {
+			entire: Boolean,
+			withOutHeadGuts: Boolean,
+			withOutThorn: Boolean,
+            fillet: Boolean,
+            slices:Boolean,
+			fresh: Boolean,
+        	cooked: Boolean
+		}
 });
 
-module.exports = model('Products', productsSchema);
+module.exports = model('products', productsSchema);

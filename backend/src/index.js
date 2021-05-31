@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const server = express();
-const port = process.env.PORT || 2012;
+const port = process.env.PORT || 2021;
 
 mongoose.connect(
     process.env.DDBB_URL,
@@ -23,7 +23,7 @@ server.use(morgan('dev'));
 
 const productsRouter = require('./routes/productsRouter');
 
-server.use('/server/products', productsRouter);
+server.use('/api/products', productsRouter);
 
 server.listen(port, 
     () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`));

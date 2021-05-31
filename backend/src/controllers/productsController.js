@@ -22,7 +22,7 @@ function productsController() {
     async function getById(req, res) {
         try {
             const productById = await Product.findById(
-                req.params.productId,
+                req.params.product._id,
             );
             res.json(productById);
         } catch (error) {
@@ -35,7 +35,7 @@ function productsController() {
     async function updateById(req, res) {
         try {
             const updatedProduct = await Product.findByIdAndUpdate(
-                req.params.productId,
+                req.params.product._id,
                 req.body,
                 { new: true },
             );
@@ -48,7 +48,7 @@ function productsController() {
 
     async function deleteById(req, res) {
         try {
-            await Product.findByIdAndDelete(req.params.productId);
+            await Product.findByIdAndDelete(req.params.product._id);
             res.status(204);
             res.json();
         } catch (error) {
