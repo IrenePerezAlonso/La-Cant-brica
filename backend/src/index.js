@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require = require('cors');
+const cors = require('cors');
 const chalk = require('chalk');
 const debug = require('debug')('server');
 const morgan = require('morgan');
@@ -23,7 +23,7 @@ server.use(morgan('dev'));
 
 const productsRouter = require('./routes/productsRouter');
 
-server.use('/home', productsRouter);
+server.use('/server/products', productsRouter);
 
 server.listen(port, 
     () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`));
