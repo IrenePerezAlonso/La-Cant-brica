@@ -12,4 +12,8 @@ const userSchema = Schema({
 	}]
 });
 
+userSchema.methods.isValidPassword = function isValidPassword(password) {
+	return password === this.password;
+};
+
 module.exports = model('users', userSchema);
