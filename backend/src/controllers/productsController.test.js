@@ -4,13 +4,13 @@ const {
     getById,
     updateById,
     deleteById,
-  } = require('./productsController')();
-  const Product = require('../model/productModel');
+} = require('./productsController')();
+const Product = require('../model/productModel');
 
-  jest.mock('../model/productModel');
+jest.mock('../model/productModel');
 
-  describe('Given a getAll function', () => {
-      test('Should get all products', async () => {
+describe('Given a getAll function', () => {
+    test('Should get all products', async () => {
         const res = {
             json: jest.fn(),
         };
@@ -19,16 +19,16 @@ const {
         await getAll(null, res);
 
         expect(res.json).toHaveBeenCalledWith([{ name: 'Merluza' }]);
-      });
-  });
+    });
+});
 
-  describe('Given a createOne function', () => {
-      class MockProduct {
-          constructor(name){
-              this.name = name;
-          }
-          save() {}
-      }
+describe('Given a createOne function', () => {
+    class MockProduct {
+        constructor(name){
+            this.name = name;
+        }
+        save() {}
+    }
     test('Should call json', async () => {
         const req = {
             body: null
@@ -71,7 +71,7 @@ describe('Given a getById function', () => {
         };
         const req = {
             params: {
-              heroId: null,
+              productId: null,
             },
         };
         Product.findById.mockRejectedValueOnce();
@@ -105,7 +105,7 @@ describe('Given a getById function', () => {
           };
         const req = {
             params: {
-              heroId: null,
+                productId: null,
             },
         };
         Product.findById.mockResolvedValueOnce('one product');
@@ -124,7 +124,7 @@ describe('Given a updateById function', () => {
           };
         const req = {
             params: {
-              heroId: null,
+                productId: null,
             },
             body: {},
         };
@@ -161,7 +161,7 @@ describe('Given a deleteById function', () => {
           };
         const req = {
             params: {
-              heroId: null,
+                productId: null,
             },
         };
 
@@ -177,7 +177,7 @@ describe('Given a deleteById function', () => {
           };
         const req = {
             params: {
-              heroId: null,
+                productId: null,
             },
         };
 
@@ -188,7 +188,7 @@ describe('Given a deleteById function', () => {
     test('Should fail and call res.send with error', async () => {
         const req = {
             params: {
-              heroId: null,
+                productId: null,
             },
           };
         const res = {
