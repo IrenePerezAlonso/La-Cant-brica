@@ -1,7 +1,7 @@
 const passport = require('passport');
 const JWTstrategy = require('passport-jwt');
 const localStrategy = require('passport-local');
-const User = require('../models/user.model');
+const User = require('../models/usersModel');
 
 passport.use(
   'signup',

@@ -1,5 +1,5 @@
 const debug = require('debug')('server:usersController');
-const User = require('../model/usersModel');
+const User = require('../models/usersModel');
 
 function usersController() {
     async function getAll(req, res) {
