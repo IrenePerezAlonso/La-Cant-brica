@@ -9,6 +9,8 @@ require('dotenv').config();
 const server = express();
 const port = process.env.PORT || 2021;
 
+const authRoutes = require('./routes/auth.routes');
+
 mongoose.connect(
     process.env.DDBB_URL,
     {
@@ -21,9 +23,8 @@ server.use(cors());
 server.use(express.json());
 server.use(morgan('dev'));
 
-const productsRouter = require('./routes/productsRouter');
 
-server.use('/api/products', productsRouter);
+server.use('/api/products', authRoutes);
 
 server.listen(port, 
     () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`));
