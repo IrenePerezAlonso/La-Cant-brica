@@ -7,6 +7,7 @@ const debug = require('debug')('server');
 
 const authRoutes = require('./routes/auth.routes');
 const productsRouter = require('./routes/productsRouter');
+const userRoutes = require('./routes/user.routes');
 
 require('dotenv').config();
 require('./passport/passport.config');
@@ -25,6 +26,8 @@ server.use(express.urlencoded({ extended: false }));
 server.use('/', authRoutes);
 server.use('/api/products', passport.authenticate('jwt', { session: false }),
 productsRouter,);
+server.use('/user', passport.authenticate('jwt', { session: false }),
+userRoutes,);
 
 server.listen(port, 
     () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`));
