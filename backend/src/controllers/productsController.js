@@ -1,5 +1,5 @@
 const debug = require('debug')('server:productsController');
-const Product = require('../model/productModel');
+const Product = require('../models/productModel');
 
 function productsController() {
     async function getAll(req, res) {
