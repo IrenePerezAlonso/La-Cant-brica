@@ -1,21 +1,17 @@
 import React from 'react';
-import Header from '../0-Header/index';
-import Footer from '../0-Footer/index';
 
 function Dashboard() {
   return (
     <>
-      <Header />
-      <body className="App">
+      <div className="div">
         <div>
-          <p>guía de compra</p>
+          <h2>LA CANTÁBRICA</h2>
           <p>
-            Envío gratuito para Salamanca y alfoz.
-            Pago en efectivo o tarjeta.
+            Ofrecemos los mejores, más frescos y seleccionados pescados
+            y mariscos, frescos y congelados. Fileteamos todos los productos que vendemos.
           </p>
         </div>
-      </body>
-      <Footer />
+      </div>
     </>
   );
 }

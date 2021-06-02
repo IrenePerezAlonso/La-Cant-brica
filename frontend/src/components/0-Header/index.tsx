@@ -13,14 +13,18 @@ function Header() {
     <BrowserRouter>
       <header className="header">
         <nav className="header-login">
-          <Link to="/login">Login</Link>
+          <Link to="/">Home</Link>
+          <Link to="/Login">Login</Link>
         </nav>
         <div className="header-nav">
           <img src={logo} alt="" />
         </div>
       </header>
       <Switch>
-        <Route path="/login" exact component={Login} />
+        <Route exact path="/" />
+        <Route path="/Login">
+          <Login />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
