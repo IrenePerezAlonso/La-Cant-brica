@@ -17,6 +17,11 @@ module.exports = {
         "react",
         "@typescript-eslint"
     ],
-    "rules": {
-    }
+    rules: {
+        'comma-dangle': [2, 'never'],
+        'linebreak-style': 0,
+        'global-require': 0,
+        'eslint linebreak-style': [0, 'error', 'windows'],
+        'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }]
+      }
 };
