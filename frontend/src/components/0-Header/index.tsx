@@ -6,14 +6,14 @@ import {
   Link
 } from 'react-router-dom';
 import logo from '../../assets/logo.png';
-import Login from '../5-Login/index';
+import Login from './Login/index';
 
 function Header() {
   return (
     <BrowserRouter>
       <header className="header">
         <nav className="header-login">
-          <Link to="/">Home</Link>
+          <Link to="/">Inicio</Link>
           <Link to="/Login">Login</Link>
         </nav>
         <div className="header-nav">
