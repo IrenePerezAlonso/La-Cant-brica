@@ -1,17 +1,20 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import * as PropTypes from 'prop-types';
-import { loadProducts } from '../../redux/actions/actionCreator';
+/* eslint-disable react/prop-types */
+import React, { useEffect, FC } from 'react';
+import { connect } from 'react-redux';
+import loadProducts from '../../redux/actions/actionCreator';
+import Products from '../../types/products';
 
-interface ProductsListProps {
-    products: Array<object>,
-    dispatch: () => any
+type ListProps = {
+    products: Products [],
+    dispatch: any
 }
 
-const ProductsList: React.FC<ProductsListProps> = ({ products, dispatch }) => {
+const List: FC<ListProps> = ({ products, dispatch }) => {
   useEffect(() => {
-    if (!products.length) dispatch(loadProducts());
+    dispatch(loadProducts());
   }, []);
+
+  // const hola = JSON.stringify(products);
 
   return (
     <>
@@ -25,19 +28,22 @@ const ProductsList: React.FC<ProductsListProps> = ({ products, dispatch }) => {
         <div className="productList-fishTittle">
           <h2>PESCADOS</h2>
           <h3>Pescado Blanco</h3>
+          <img src={products[0]?.img} alt="" />
+          <p>{products[0]?.name}</p>
+          <p>
+            {products[0]?.price}
+            {' '}
+            €
+          </p>
           <h3>Pescado Azul</h3>
-        </div>
-        <div className="productList-fishses">
-          {products.map((product) => <Link key={product._id} to={`/detail/${product.id}`}>{product.name}</Link>)}
         </div>
       </div>
     </>
   );
 };
 
-ProductsList.propTypes = {
-  products: PropTypes.shape([{}]).isRequired,
-  dispatch: PropTypes.func.isRequired
-};
+function mapStateToProps(store: any) {
+  return { products: store.productsStore };
+}
 
-export default ProductsList;
+export default connect(mapStateToProps)(List);
