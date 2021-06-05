@@ -3,13 +3,15 @@ import React, { useEffect, FC } from 'react';
 import { connect } from 'react-redux';
 import loadProducts from '../../redux/actions/actionCreator';
 import Products from '../../types/products';
+import FishList from './Fish/index';
+import './list.css';
 
 type ListProps = {
     products: Products [],
     dispatch: any
 }
 
-const List: FC<ListProps> = ({ products, dispatch }) => {
+const List: FC<ListProps> = ({ dispatch }) => {
   useEffect(() => {
     dispatch(loadProducts());
   }, []);
@@ -23,30 +25,8 @@ const List: FC<ListProps> = ({ products, dispatch }) => {
           <button type="button" className="productList-buttons__molluscks button">Mariscos</button>
           <button type="button" className="productList-buttons__cephalopods button">Cefalópodos</button>
         </div>
-        <div className="productList-fishTittle">
-          <h2>PESCADOS</h2>
-          <h3>Pescado Blanco</h3>
-          <ul>
-            {
-            products.length && products?.map((product) => (
-              <li>
-                <span>
-                  <img src={product.img} alt="" />
-                  {product.name}
-                  {product.price}
-                  {' '}
-                  €
-                </span>
-              </li>
-            ))
-            }
-          </ul>
-          <p>
-            {products[0]?.price}
-            {' '}
-            €
-          </p>
-          <h3>Pescado Azul</h3>
+        <div className="productList-products">
+          <FishList />
         </div>
       </div>
     </>
