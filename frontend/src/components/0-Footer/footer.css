@@ -1,0 +1,33 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  align-items: center;
+  background-color: #046582;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+}
+.footer .footer-logo {
+  width: 120px;
+  height: 60px;
+}
+.footer .footer-text {
+  width: 50%;
+}
+.footer .footer-text__title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer .footer-text__phrase {
+  font-size: 10px;
+}/*# sourceMappingURL=footer.css.map */
