@@ -1,0 +1,87 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.productList .productList-title {
+  align-items: center;
+  background-color: #8AC4D0;
+  color: white;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  padding: 10px 0 10px;
+}
+.productList .productList-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.productList button {
+  color: white;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 1% 5% 1% 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+.productList .productList-products__title-fish {
+  color: #8AC4D0;
+  font-size: 18px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.productList .productList-products .hr1 {
+  border: none;
+  height: 1px;
+  background-color: #8AC4D0;
+  margin: 5px 0 10px 0;
+}
+.productList .productList-products__title-white {
+  color: #8AC4D0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.productList .productList-products .hr2 {
+  border: none;
+  height: 1px;
+  background-color: #8AC4D0;
+  margin: 5px 0 10px 0;
+  width: 50%;
+}
+.productList .productList-products__ul {
+  display: flex;
+  flex-direction: row;
+}
+.productList .productList-products__ul .ul-list {
+  display: flex;
+  flex-direction: column;
+}
+.productList .productList-products__ul .ul-list span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productList .productList-products__ul .ul-list img {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+.productList .productList-products__ul .ul-list img :hover {
+  transform: scale(1.5);
+  border: 27px solid;
+  border-color: #8AC4D0;
+}
+.productList .productList-products__title-blue {
+  color: #8AC4D0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=list.css.map */
