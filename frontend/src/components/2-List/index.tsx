@@ -14,8 +14,6 @@ const List: FC<ListProps> = ({ products, dispatch }) => {
     dispatch(loadProducts());
   }, []);
 
-  // const hola = JSON.stringify(products);
-
   return (
     <>
       <div className="productList">
@@ -28,8 +26,21 @@ const List: FC<ListProps> = ({ products, dispatch }) => {
         <div className="productList-fishTittle">
           <h2>PESCADOS</h2>
           <h3>Pescado Blanco</h3>
-          <img src={products[0]?.img} alt="" />
-          <p>{products[0]?.name}</p>
+          <ul>
+            {
+            products.length && products?.map((product) => (
+              <li>
+                <span>
+                  <img src={product.img} alt="" />
+                  {product.name}
+                  {product.price}
+                  {' '}
+                  €
+                </span>
+              </li>
+            ))
+            }
+          </ul>
           <p>
             {products[0]?.price}
             {' '}
