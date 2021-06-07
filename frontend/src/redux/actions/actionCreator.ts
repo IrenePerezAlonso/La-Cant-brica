@@ -6,7 +6,7 @@ const config: Object = {
   method: 'get',
   url: 'http://localhost:2021/api/products',
   headers: {
-    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYjYzNTI2OTA1OGYzNGY0ODc3MDVjYSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMjgxODA4MSwiZXhwIjoxNjIyODY2MDgxfQ.A_z7_tSGEaUx01iMfegXyANktI3g3PySFKuzQCzCFDo'
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYjYzNTI2OTA1OGYzNGY0ODc3MDVjYSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzA0ODE2NCwiZXhwIjoxNjIzNTI4MTY0fQ.kXkNVqADpGaG5wTbyzXvQsoJrNQajK6OUMKIw39aEmQ'
   }
 };
 
