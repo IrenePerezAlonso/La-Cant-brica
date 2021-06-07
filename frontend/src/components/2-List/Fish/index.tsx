@@ -33,10 +33,12 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
             <li className="ul-list">
               <div>
                 <img src={whiteFish.img} alt="fish" className="ul-list__img" />
-                {whiteFish.name}
-                {whiteFish.price}
-                {' '}
-                €
+                <p>
+                  {whiteFish.name}
+                  {whiteFish.price}
+                  {' '}
+                  €
+                </p>
               </div>
             </li>
           ))
@@ -50,10 +52,12 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
           <li className="ul-list">
             <div>
               <img src={whiteFish.img} alt="fish" className="ul-list__img" />
-              {whiteFish.name}
-              {whiteFish.price}
-              {' '}
-              €
+              <p>
+                {whiteFish.name}
+                {whiteFish.price}
+                {' '}
+                €
+              </p>
             </div>
           </li>
         ))

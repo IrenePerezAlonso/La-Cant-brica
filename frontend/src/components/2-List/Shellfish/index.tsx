@@ -33,10 +33,12 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
             <li className="ul-list">
               <div>
                 <img src={mollusck.img} alt="fish" className="ul-list__img" />
-                {mollusck.name}
-                {mollusck.price}
-                {' '}
-                €
+                <p>
+                  {mollusck.name}
+                  {mollusck.price}
+                  {' '}
+                  €
+                </p>
               </div>
             </li>
           ))
@@ -50,10 +52,12 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
           <li className="ul-list">
             <div>
               <img src={crustacean.img} alt="fish" className="ul-list__img" />
-              {crustacean.name}
-              {crustacean.price}
-              {' '}
-              €
+              <p>
+                {crustacean.name}
+                {crustacean.price}
+                {' '}
+                €
+              </p>
             </div>
           </li>
         ))

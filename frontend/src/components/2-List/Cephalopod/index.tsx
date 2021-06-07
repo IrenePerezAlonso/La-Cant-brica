@@ -29,10 +29,12 @@ const CephalopodList: FC <CephalopodProps> = ({ products, dispatch }) => {
             <li className="ul-list">
               <div>
                 <img src={cephalopod.img} alt="fish" className="ul-list__img" />
-                {cephalopod.name}
-                {cephalopod.price}
-                {' '}
-                €
+                <p>
+                  {cephalopod.name}
+                  {cephalopod.price}
+                  {' '}
+                  €
+                </p>
               </div>
             </li>
           ))
