@@ -31,13 +31,13 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
         {
           whiteList.map((whiteFish) => (
             <li className="ul-list">
-              <span>
+              <div>
                 <img src={whiteFish.img} alt="fish" className="ul-list__img" />
                 {whiteFish.name}
                 {whiteFish.price}
                 {' '}
                 €
-              </span>
+              </div>
             </li>
           ))
         }
@@ -48,13 +48,13 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
         {
         blueList.map((whiteFish) => (
           <li className="ul-list">
-            <span>
+            <div>
               <img src={whiteFish.img} alt="fish" className="ul-list__img" />
               {whiteFish.name}
               {whiteFish.price}
               {' '}
               €
-            </span>
+            </div>
           </li>
         ))
         }
