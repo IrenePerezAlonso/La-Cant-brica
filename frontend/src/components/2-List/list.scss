@@ -22,6 +22,7 @@ $blueLight: #8AC4D0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin: 0px 15px 0px 15px;
     }
     
     button {
@@ -36,6 +37,7 @@ $blueLight: #8AC4D0;
     }
 
     .productList-products {
+            margin: 0px 15px 0px 15px;
         &__title-fish {
             color: $blueLight;
             font-size: 18px;
@@ -64,6 +66,7 @@ $blueLight: #8AC4D0;
         &__ul {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             .ul-list {
                     display: flex;
                     flex-direction: column;
@@ -76,12 +79,23 @@ $blueLight: #8AC4D0;
                     border-radius: 5px;
                     width: 100px;
                     height: 100px;
+                    margin: 5px;
+                    display: flex;
                     transition: transform 0.2s; 
-                    :hover {
+                    &:hover {
                         transform: scale(1.5); 
-                        border: 27px solid;
+                        border: 3px solid;
                         border-color: $blueLight;
                     }
+                }
+                p {
+                    color: $blueLight;
+                    display: flex;
+                    flex-direction: column;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 14px; 
+                    justify-content: center;
+                    margin: 5px 0px 5px 5px;
                 }
             }
         }
