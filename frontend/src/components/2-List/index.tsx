@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import loadProducts from '../../redux/actions/actionCreator';
 import Products from '../../types/products';
 import FishList from './Fish/index';
+import ShellfishList from './Shellfish/index';
+import CephalopodList from './Cephalopod/index';
 import './list.css';
 
 type ListProps = {
@@ -27,6 +29,8 @@ const List: FC<ListProps> = ({ dispatch }) => {
         </div>
         <div className="productList-products">
           <FishList />
+          <ShellfishList />
+          <CephalopodList />
         </div>
       </div>
     </>
