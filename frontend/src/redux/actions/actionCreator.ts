@@ -10,7 +10,7 @@ const config: Object = {
   }
 };
 
-// const url = 'http://localhost:2021/api/products';
+const url = 'http://localhost:2021/api/products';
 
 export default function loadProducts() {
   return async (dispatch: Dispatch) => {
@@ -57,6 +57,16 @@ export default function loadProducts() {
 //     });
 //   };
 // }
+
+export function getProductById(productId: any) {
+  return async (dispatch: Dispatch) => {
+    const { data } = await axios(`${url}/${productId}`);
+    dispatch({
+      type: actionTypes.LOAD_PRODUCT,
+      product: data
+    });
+  };
+}
 
 // export function loadProduct(product: {_id: String}) {
 //   return async (dispatch: Dispatch) => {
