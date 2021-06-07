@@ -2,6 +2,7 @@ export default interface Products {
         _id: string,
         name: string,
         type: string,
+        subType: String,
         img: string,
         price: number,
         preparation: {
@@ -13,4 +14,4 @@ export default interface Products {
                 fresh: Boolean,
                 cooked: Boolean
         }
-};
+}
