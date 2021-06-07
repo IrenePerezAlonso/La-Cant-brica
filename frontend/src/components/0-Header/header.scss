@@ -13,16 +13,14 @@ $blueLight: #8AC4D0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    width: 100%;
+    background-color: white;
     .header-login {
         align-items: center;
         background-color: $blueDark;
         display: flex;
         justify-content: flex-end;
         padding: 5px;
-        &__start {
-            color:white;
-            text-decoration: none;
-        }
         &__login {
             color: white;
             margin-left: 1em;
@@ -35,7 +33,21 @@ $blueLight: #8AC4D0;
         flex-direction: row;
         padding: 5px;
         justify-content: space-between;
-        
+        &__start {
+            color: $blueLight;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        &__recipes {
+            color: $blueLight;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        &__contact {
+            color: $blueLight;
+            text-decoration: none;
+            font-size: 10px;
+        }
         &__logo {
             width: 160px;
         }

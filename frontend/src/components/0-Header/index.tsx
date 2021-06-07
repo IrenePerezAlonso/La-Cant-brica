@@ -16,13 +16,15 @@ function Header() {
     <BrowserRouter>
       <header className="header">
         <nav className="header-login">
-          <Link to="/" className="header-login__start">Inicio</Link>
           <Link to="/Login" className="header-login__login">
             <img src={loginImg} alt="login" />
           </Link>
         </nav>
         <div className="header-nav">
           <img src={logoImg} alt="logo de La Cantábrica" className="header-nav__logo" />
+          <Link to="/" className="header-nav__start">Inicio</Link>
+          <Link to="/recetas" className="header-nav__recipes">Recetas</Link>
+          <Link to="/contacto" className="header-nav__contact">Contacto</Link>
           <img src={cartImg} alt="cart" className="header-nav__cart" />
         </div>
       </header>
