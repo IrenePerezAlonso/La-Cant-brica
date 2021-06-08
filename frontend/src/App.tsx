@@ -9,6 +9,7 @@ import List from './components/2-List/index';
 import Contact from './components/5-Contact/index';
 import Footer from './components/0-Footer/index';
 import Cart from './components/4-Cart/index';
+import Recipes from './components/6-Recipes/index';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/tienda" component={List} />
           <Route exact path="/carrito" component={Cart} />
           <Route exact path="/contacto" component={Contact} />
+          <Route exact path="/recetas" component={Recipes} />
           <Route exact path="/" component={Dashboard} />
         </Switch>
         <Footer />
