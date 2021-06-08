@@ -6,6 +6,7 @@ import Header from './components/0-Header/index';
 import Login from './components/0-Header/Login/index';
 import Dashboard from './components/1-Dashboard/index';
 import List from './components/2-List/index';
+import Contact from './components/5-Contact/index';
 import Footer from './components/0-Footer/index';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/login" component={Login} />
           <Route exact path="/tienda" component={List} />
+          <Route exact path="/contacto" component={Contact} />
           <Route exact path="/" component={Dashboard} />
         </Switch>
         <Footer />
