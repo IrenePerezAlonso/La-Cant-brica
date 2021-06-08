@@ -23,7 +23,9 @@ function Header() {
           <Link to="/" className="header-nav__start">Inicio</Link>
           <Link to="/recetas" className="header-nav__recipes">Recetas</Link>
           <Link to="/contacto" className="header-nav__contact">Contacto</Link>
-          <img src={cartImg} alt="cart" className="header-nav__cart" />
+          <Link to="/carrito">
+            <img src={cartImg} alt="cart" className="header-nav__cart" />
+          </Link>
         </div>
       </header>
     </>
