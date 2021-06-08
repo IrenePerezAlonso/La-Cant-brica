@@ -10,6 +10,7 @@ import Contact from './components/5-Contact/index';
 import Footer from './components/0-Footer/index';
 import Cart from './components/4-Cart/index';
 import Recipes from './components/6-Recipes/index';
+import Detail from './components/3-Detail/index';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/carrito" component={Cart} />
           <Route exact path="/contacto" component={Contact} />
           <Route exact path="/recetas" component={Recipes} />
+          <Route exact path="/detail/:productId" component={Detail} />
           <Route exact path="/" component={Dashboard} />
         </Switch>
         <Footer />
