@@ -18,25 +18,27 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch }) => {
 
   return (
     <>
-      <div>
-        <img src={selectedProduct?.img} alt="imagen producto seleccionado" />
-        <h2>
-          {selectedProduct?.name}
-          {' '}
-        </h2>
-        <p>
-          {selectedProduct?.price}
-        </p>
-      </div>
-      <div>
-        <h2>preparación</h2>
-        <p>elige una opción</p>
+      <img src={selectedProduct?.img} alt="imagen producto seleccionado" />
+      <h2 className="detail-selectedProduct__name">
+        {selectedProduct?.name}
+        {' '}
+      </h2>
+      <p className="detail-selectedProduct__price">
+        {selectedProduct?.price}
+        {' '}
+        €
+      </p>
+      <hr />
+      <div className="detail-selectedProduct__preparation">
+        <h3 className="preparation-title">preparación</h3>
+        <p className="preparation-choose">añada un comentario si precisa</p>
         <form action="">
-          <label htmlFor="hola">
-            <input type="checkbox" className="" name="preparation" value="hola" />
+          <label htmlFor="preparation">
+            <input type="text" className="comment" placeholder="ej. Quiero el producto en rodajas, filetes, entero, sin cabeza..." />
           </label>
         </form>
       </div>
+      <hr />
       <button type="button">añadir al carrito</button>
     </>
   );

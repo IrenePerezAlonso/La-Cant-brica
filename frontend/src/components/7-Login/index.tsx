@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import getUser from '../../redux/actions/actionLogin';
 import Cart from '../4-Cart/index';
 import Users from '../../types/users';
+import './login.css';
 
 type LoginProps = {
   dispatch: any,
@@ -29,13 +30,18 @@ const Login: FC<LoginProps> = ({ user, dispatch }) => {
 
   return (
     !user ? (
-      <div>
-        <form className="login">
-          <h1>login</h1>
-          <input type="text" className="email" placeholder="introduzca su email" onChange={handleEmail} />
-          <input type="text" className="password" placeholder="introduzca su contraseña" onChange={handlePassword} />
+      <div className="login">
+        <h1 className="login-title">login</h1>
+        <div className="login-create">
+          <h2>Crear cuenta</h2>
+          <form className="login">
+            <p>Introduzca su contraseña:</p>
+            <input type="text" id="email" className="email" placeholder="email" onChange={handleEmail} />
+            <p>Introduzca su password:</p>
+            <input type="text" id="password" placeholder="contraseña" onChange={handlePassword} />
+          </form>
           <button type="button" className="submit" onClick={handleSubmitLogin}>Submit</button>
-        </form>
+        </div>
       </div>
     ) : (
       <Cart />
