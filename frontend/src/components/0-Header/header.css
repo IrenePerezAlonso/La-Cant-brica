@@ -1,0 +1,60 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.header .header-login {
+  align-items: center;
+  background-color: #046582;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.header .header-login__login {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+}
+.header .header-nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-between;
+}
+.header .header-nav__start {
+  color: #8AC4D0;
+  text-decoration: none;
+  font-size: 10px;
+}
+.header .header-nav__recipes {
+  color: #8AC4D0;
+  text-decoration: none;
+  font-size: 10px;
+}
+.header .header-nav__contact {
+  color: #8AC4D0;
+  text-decoration: none;
+  font-size: 10px;
+}
+.header .header-nav__logo {
+  width: 160px;
+}
+.header .header-nav__cart {
+  background-color: #8AC4D0;
+  border-radius: 5px;
+  padding: 1%;
+  width: 35px;
+}/*# sourceMappingURL=header.css.map */

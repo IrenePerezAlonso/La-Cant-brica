@@ -1,0 +1,31 @@
+$blueDark: #046582;
+$blueLight: #8AC4D0;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart {
+    .cart-title {
+        align-items: center;
+        background-color: $blueLight;
+        color: white;
+        display: flex;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        padding: 10px 0 10px;
+        text-transform: uppercase;
+    }
+    button {
+        color: white;
+        background-color: $blueLight;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 1% 5% 1% 5%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+    }
+}

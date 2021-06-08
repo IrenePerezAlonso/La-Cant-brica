@@ -1,0 +1,35 @@
+$blueDark: #046582;
+$blueLight: #8AC4D0;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    align-items: center;
+    background-color: $blueDark;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    .footer-logo {
+        width: 120px;
+        height: 60px;
+    }
+    .footer-text {
+        width: 50%;
+        &__title {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        &__phrase {
+            font-size: 10px;
+        }
+    }
+}

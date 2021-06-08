@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recipes .recipes-title {
+  align-items: center;
+  background-color: #8AC4D0;
+  color: white;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  padding: 10px 0 10px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=recipes.css.map */
