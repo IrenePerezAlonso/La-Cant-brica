@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import store from './redux/store/index';
 import Header from './components/0-Header/index';
-import Login from './components/0-Header/Login/index';
+import Login from './components/7-Login/index';
 import Dashboard from './components/1-Dashboard/index';
 import List from './components/2-List/index';
 import Contact from './components/5-Contact/index';
