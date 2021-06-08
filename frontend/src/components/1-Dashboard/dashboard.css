@@ -37,5 +37,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  width: 130%;
+  width: 100%;
+}
+.dashboard .dashboard-content a {
+  width: 200px;
 }/*# sourceMappingURL=dashboard.css.map */
