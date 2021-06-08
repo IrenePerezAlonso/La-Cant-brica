@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import loadProducts from '../../../redux/actions/actionCreator';
 import Products from '../../../types/products';
@@ -32,7 +33,9 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
           whiteList.map((whiteFish) => (
             <li className="ul-list">
               <div>
-                <img src={whiteFish.img} alt="fish" className="ul-list__img" />
+                <Link key={whiteFish._id} to={`/detail/${whiteFish._id}`}>
+                  <img src={whiteFish.img} alt="fish" className="ul-list__img" />
+                </Link>
                 <p>
                   {whiteFish.name}
                   {whiteFish.price}
