@@ -1,16 +1,19 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { FC, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../../redux/actions/actionCreator';
+import { addToCart } from '../../../redux/actions/actionCart';
 import Products from '../../../types/products';
 
 type DetailProps = {
+    cart: any,
     selectedProduct?: Products,
     dispatch: any
 }
 
-const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch }) => {
+const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => {
   const { productId }: any = useParams();
   useEffect(() => {
     dispatch(getProductById(productId));
@@ -39,13 +42,22 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch }) => {
         </form>
       </div>
       <hr />
-      <button type="button">añadir al carrito</button>
+      <button
+        type="button"
+        id={selectedProduct?._id}
+        onClick={() => {
+          dispatch(addToCart(selectedProduct));
+        }}
+      >
+        añadir al carrito
+
+      </button>
     </>
   );
 };
 
-function mapStateToProps({ selectedProduct }: any) {
-  return { selectedProduct };
+function mapStateToProps({ selectedProduct, cart }: any) {
+  return { selectedProduct, cart };
 }
 
 export default connect(mapStateToProps)(ProductDetail);
