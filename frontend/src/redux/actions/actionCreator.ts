@@ -10,6 +10,12 @@ const config: Object = {
   }
 };
 
+const token = {
+  headers: {
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYjYzNTI2OTA1OGYzNGY0ODc3MDVjYSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzA0ODE2NCwiZXhwIjoxNjIzNTI4MTY0fQ.kXkNVqADpGaG5wTbyzXvQsoJrNQajK6OUMKIw39aEmQ'
+  }
+};
+
 const url = 'http://localhost:2021/api/products';
 
 export default function loadProducts() {
@@ -60,7 +66,7 @@ export default function loadProducts() {
 
 export function getProductById(productId: any) {
   return async (dispatch: Dispatch) => {
-    const { data } = await axios(`${url}/${productId}`);
+    const { data } = await axios(`${url}/${productId}`, token);
     dispatch({
       type: actionTypes.LOAD_PRODUCT,
       product: data
