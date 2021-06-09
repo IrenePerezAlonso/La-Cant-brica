@@ -25,6 +25,27 @@ function cartReducer(cartList: any = [], action: any) {
         productToAdd = { ...action.product, quantity: 1 };
         newCartList = [...newCartList, productToAdd];
       }
+
+      break;
+
+    case actionTypes.DECREASE_PRODUCT:
+
+      const itemDecreased = newCartList.find(({ _id }) => action.product._id === _id);
+
+      if (itemDecreased) {
+        newCartList.map(
+          (product) => (action.product._id === product._id
+            ? { ...product, quantity: itemDecreased.quantity -= 1 }
+            : product)
+        );
+      } else {
+        newCartList.map(
+          (product) => (action.product._id === product._id
+            ? { ...product, quantity: itemDecreased.quantity -= 1 }
+            : product)
+        );
+      }
+
       break;
 
     case actionTypes.DELETE_CART_PRODUCT:
@@ -33,6 +54,7 @@ function cartReducer(cartList: any = [], action: any) {
     default:
       return cartList;
   }
+
   return newCartList;
 }
 

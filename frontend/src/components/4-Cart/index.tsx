@@ -2,7 +2,9 @@
 import React, { useEffect, FC } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { loadCart, deleteFromCart, addToCart } from '../../redux/actions/actionCart';
+import {
+  loadCart, deleteFromCart, addToCart, descreaseProduct
+} from '../../redux/actions/actionCart';
 import './cart.css';
 
 type CartProps = {
@@ -45,7 +47,17 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
                             {item.quantity}
                           </p>
                           <div className="list-info__elements-button">
-                            <button type="button" className="elements-button__res">-</button>
+                            <button
+                              type="button"
+                              className="elements-button__res"
+                              id={item?._id}
+                              onClick={() => {
+                                dispatch(descreaseProduct(item));
+                              }}
+                            >
+                              -
+
+                            </button>
                             <button
                               type="button"
                               className="elements-button__sum"
@@ -55,7 +67,6 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
                               }}
                             >
                               +
-
                             </button>
                           </div>
                           <button

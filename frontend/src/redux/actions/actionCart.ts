@@ -20,3 +20,10 @@ export function deleteFromCart(productId: any) {
     productId
   };
 }
+
+export function descreaseProduct(product: any) {
+  return {
+    type: actionTypes.DECREASE_PRODUCT,
+    product
+  };
+}
