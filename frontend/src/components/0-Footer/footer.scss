@@ -10,13 +10,14 @@ $blueLight: #8AC4D0;
 .footer {
     align-items: center;
     background-color: $blueDark;
-    bottom: 0;
+    bottom:0px;
     color: white;
     display: flex;
     flex-direction: row;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-between;
     padding: 5px;
+    position: fixed;
     width: 100%;
     .footer-logo {
         width: 120px;

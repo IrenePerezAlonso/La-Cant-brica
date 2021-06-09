@@ -7,13 +7,14 @@
 .footer {
   align-items: center;
   background-color: #046582;
-  bottom: 0;
+  bottom: 0px;
   color: white;
   display: flex;
   flex-direction: row;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between;
   padding: 5px;
+  position: fixed;
   width: 100%;
 }
 .footer .footer-logo {

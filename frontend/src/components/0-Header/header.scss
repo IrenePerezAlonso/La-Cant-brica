@@ -74,7 +74,11 @@ $blueLight: #8AC4D0;
             height: 35px;
         }
         &__cart-img {
+            padding-left: 5px;
             width: 80%;
+        }
+        &__cart-length {
+            padding-right: 5px;
         }
         &__cart-length {
             color: white;
