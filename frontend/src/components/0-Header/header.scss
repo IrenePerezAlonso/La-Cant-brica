@@ -20,9 +20,19 @@ $blueLight: #8AC4D0;
     .header-login {
         align-items: center;
         background-color: $blueDark;
+        color: white;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding: 5px;
+        text-transform: lowercase;
+        &__info {
+            display: flex;
+            flex-direction: row;
+            font-size: 8px;
+        }
+        &__info-email {
+            margin-left: 20px;
+        }
         &__login {
             color: white;
             margin-left: 1em;
@@ -54,12 +64,25 @@ $blueLight: #8AC4D0;
             width: 160px;
         }
         &__cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $blueLight;
             border-radius: 5px;
             padding: 1%;
             width: 35px;
+            height: 35px;
+        }
+        &__cart-img {
+            width: 80%;
+        }
+        &__cart-length {
+            color: white;
         }
     }
+}
+a {
+    text-decoration: none;
 }
 
 
