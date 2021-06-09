@@ -11,24 +11,29 @@ import Footer from './components/0-Footer/index';
 import Cart from './components/4-Cart/index';
 import Recipes from './components/6-Recipes/index';
 import Detail from './components/3-Detail/index';
+import './App.css';
 
 function App() {
   return (
-    <Provider store={store({ type: String })}>
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/tienda" component={List} />
-          <Route exact path="/carrito" component={Cart} />
-          <Route exact path="/contacto" component={Contact} />
-          <Route exact path="/recetas" component={Recipes} />
-          <Route exact path="/detail/:productId" component={Detail} />
-          <Route exact path="/" component={Dashboard} />
-        </Switch>
-        <Footer />
-      </BrowserRouter>
-    </Provider>
+    <div className="page-container">
+      <div className="content-app">
+        <Provider store={store({ type: String })}>
+          <BrowserRouter>
+            <Header />
+            <Switch>
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/tienda" component={List} />
+              <Route exact path="/carrito" component={Cart} />
+              <Route exact path="/contacto" component={Contact} />
+              <Route exact path="/recetas" component={Recipes} />
+              <Route exact path="/detail/:productId" component={Detail} />
+              <Route exact path="/" component={Dashboard} />
+            </Switch>
+          </BrowserRouter>
+        </Provider>
+      </div>
+      <Footer />
+    </div>
   );
 }
 
