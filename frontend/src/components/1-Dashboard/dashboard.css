@@ -39,6 +39,9 @@
   text-transform: uppercase;
   width: 100%;
 }
+.dashboard .dashboard-content button:hover {
+  cursor: pointer;
+}
 .dashboard .dashboard-content a {
   width: 200px;
 }/*# sourceMappingURL=dashboard.css.map */

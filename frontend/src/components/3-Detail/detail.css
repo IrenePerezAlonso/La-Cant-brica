@@ -60,6 +60,11 @@
   background-color: #8AC4D0;
   margin: 15px 0 10px 0;
 }
+.detail .detail-selectedProduct__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .detail .detail-selectedProduct button {
   color: white;
   background-color: #8AC4D0;
@@ -70,26 +75,32 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
+.detail .detail-selectedProduct button:hover {
+  cursor: pointer;
+}
 .detail input {
-  border-style: solid;
+  border: 2px solid #8AC4D0;
   border-radius: 5px;
-  border-color: #8AC4D0;
-  margin-top: 15px;
   height: 100px;
+  margin-top: 15px;
+  outline: none;
   width: 100%;
 }
 .detail input::-moz-placeholder {
   color: #8AC4D0;
   display: flex;
   flex-wrap: wrap;
+  font-size: 12px;
 }
 .detail input:-ms-input-placeholder {
   color: #8AC4D0;
   display: flex;
   flex-wrap: wrap;
+  font-size: 12px;
 }
 .detail input::placeholder {
   color: #8AC4D0;
   display: flex;
   flex-wrap: wrap;
+  font-size: 12px;
 }/*# sourceMappingURL=detail.css.map */

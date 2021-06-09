@@ -29,6 +29,9 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
+.productList button:hover {
+  cursor: pointer;
+}
 .productList .productList-products {
   margin: 0px 15px 0px 15px;
 }

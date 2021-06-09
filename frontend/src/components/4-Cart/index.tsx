@@ -19,25 +19,34 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
     <>
       <div className="cart">
         <h1 className="cart-title">carrito</h1>
-        <div className="cart-title__section">
+        <div className="cart-section">
           <ul>
             {
               cart?.length
                 ? (
                   cart.map((item: any) => (
-                    <li>
-                      <div>
+                    <li className="cart-section__list">
+                      <div className="section__list-info">
                         <img src={item.img} alt="" />
-                        {item.name}
-                        {' '}
-                        x
-                        {' '}
-                        {item.quantity}
+                        <div className="list-info__elements">
+                          <p className="list-info__elements-letters">
+                            {item.name}
+                            {' '}
+                            x
+                            {' '}
+                            {item.quantity}
+                          </p>
+                          <div className="list-info__elements-button">
+                            <button type="button" className="elements-button__sum">+</button>
+                            <button type="button" className="elements-button__res">-</button>
+                          </div>
+                          <button type="button" className="list-info__elements-delete">Eliminar</button>
+                        </div>
                       </div>
                     </li>
                   ))
                 ) : (
-                  <p>Carrito vacío</p>
+                  <p className="cart-section-empty">- el carrito está vacío -</p>
                 )
             }
           </ul>

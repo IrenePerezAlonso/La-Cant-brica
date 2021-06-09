@@ -63,6 +63,11 @@ $blueLight: #8AC4D0;
             background-color: $blueLight;
             margin: 15px 0 10px 0;
         }
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
         button {
             color: white;
             background-color: $blueLight;
@@ -72,19 +77,23 @@ $blueLight: #8AC4D0;
             padding: 1% 5% 1% 5%;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-transform: uppercase;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     input {
-        border-style: solid;
+        border: 2px solid $blueLight;
         border-radius: 5px;
-        border-color: $blueLight;
-        margin-top: 15px;
         height: 100px;
+        margin-top: 15px;
+        outline: none;
         width: 100%;
         &::placeholder {
             color: $blueLight;
             display: flex;
             flex-wrap: wrap;
+            font-size: 12px;
         }
     }
 }

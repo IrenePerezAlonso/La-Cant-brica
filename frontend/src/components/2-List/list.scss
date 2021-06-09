@@ -34,6 +34,9 @@ $blueLight: #8AC4D0;
         padding: 1% 5% 1% 5%;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .productList-products {
