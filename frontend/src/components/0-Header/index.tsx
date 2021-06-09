@@ -17,6 +17,10 @@ const Header: FC<HeaderProps> = ({ cart }) => (
   <>
     <header className="header">
       <nav className="header-login">
+        <div className="header-login__info">
+          <p className="header-login__info-number">923 213 508</p>
+          <p className="header-login__info-email">eduperfer@hotmail.com</p>
+        </div>
         <Link to="/login" className="header-login__login">
           <img src={loginImg} alt="login" />
         </Link>
@@ -29,8 +33,12 @@ const Header: FC<HeaderProps> = ({ cart }) => (
         <Link to="/recetas" className="header-nav__recipes">Recetas</Link>
         <Link to="/contacto" className="header-nav__contact">Contacto</Link>
         <Link to="/carrito">
-          <img src={cartImg} alt="cart" className="header-nav__cart" />
-          {cart.length}
+          <div className="header-nav__cart">
+            <img src={cartImg} className="header-nav__cart-img" alt="cart" />
+            <p className="header-nav__cart-length">
+              {cart.length}
+            </p>
+          </div>
         </Link>
       </div>
     </header>
