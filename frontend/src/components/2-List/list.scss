@@ -46,7 +46,22 @@ $blueLight: #8AC4D0;
             font-size: 18px;
             margin-top: 15px;
             text-transform: uppercase;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        &__title-shellfish {
+            color: $blueLight;
+            font-size: 18px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        &__title-cephalopod {
+            color: $blueLight;
+            font-size: 18px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         .hr1 {
             border: none;
             height: 1px;
@@ -83,6 +98,7 @@ $blueLight: #8AC4D0;
                     width: 150px;
                     height: 150px;
                     margin: 5px;
+                    object-fit: cover;
                     display: flex;
                     transition: transform 0.2s; 
                     &:hover {
