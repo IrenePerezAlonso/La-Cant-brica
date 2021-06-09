@@ -1,20 +1,16 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import loadProducts from '../../redux/actions/actionCreator';
-import Products from '../../types/products';
 import FishList from './Fish/index';
 import ShellfishList from './Shellfish/index';
 import CephalopodList from './Cephalopod/index';
 import './list.css';
 
-type ListProps = {
-    products: Products [],
-    dispatch: any
-}
+const List: FC = () => {
+  const dispatch = useDispatch();
 
-const List: FC<ListProps> = ({ dispatch }) => {
   useEffect(() => {
     dispatch(loadProducts());
   }, []);
@@ -44,8 +40,4 @@ const List: FC<ListProps> = ({ dispatch }) => {
   );
 };
 
-function mapStateToProps(store: any) {
-  return { products: store.productsStore };
-}
-
-export default connect(mapStateToProps)(List);
+export default List;
