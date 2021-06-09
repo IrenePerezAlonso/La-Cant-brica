@@ -50,7 +50,6 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
         }}
       >
         añadir al carrito
-
       </button>
     </>
   );

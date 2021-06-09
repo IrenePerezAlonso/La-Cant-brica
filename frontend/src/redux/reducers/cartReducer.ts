@@ -2,7 +2,7 @@
 /* eslint-disable no-case-declarations */
 import actionTypes from '../actions/actionTypes';
 
-function cartReducer(cartList = [], action: any) {
+function cartReducer(cartList: any = [], action: any) {
   let newCartList = [...cartList];
 
   switch (action.type) {
@@ -10,9 +10,11 @@ function cartReducer(cartList = [], action: any) {
       return cartList;
 
     case actionTypes.ADD_PRODUCTS_TO_CART:
+
       let productToAdd;
       const item = newCartList
         .find(({ _id }) => action.product._id === _id);
+
       if (item) {
         newCartList = newCartList.map(
           (product) => (action.product._id === product._id
@@ -28,6 +30,7 @@ function cartReducer(cartList = [], action: any) {
     default:
       return cartList;
   }
+  return newCartList;
 }
 
 export default cartReducer;
