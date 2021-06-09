@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { FC, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import { getProductById } from '../../../redux/actions/actionCreator';
 import { addToCart } from '../../../redux/actions/actionCart';
 import Products from '../../../types/products';
@@ -42,15 +42,20 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
         </form>
       </div>
       <hr />
-      <button
-        type="button"
-        id={selectedProduct?._id}
-        onClick={() => {
-          dispatch(addToCart(selectedProduct));
-        }}
-      >
-        añadir al carrito
-      </button>
+      <div className="detail-selectedProduct__buttons">
+        <Link to="/tienda">
+          <button type="button">seguir comprando</button>
+        </Link>
+        <button
+          type="button"
+          id={selectedProduct?._id}
+          onClick={() => {
+            dispatch(addToCart(selectedProduct));
+          }}
+        >
+          añadir al carrito
+        </button>
+      </div>
     </>
   );
 };

@@ -42,10 +42,12 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
             }
           </ul>
         </div>
-        <Link to="/tienda">
-          <button type="button" className="section-button button">seguir comprando</button>
-        </Link>
-        <button type="button" className="section-button button">finalizar compra</button>
+        <div className="cart-title__buttons">
+          <Link to="/tienda">
+            <button type="button" className="section-button button">seguir comprando</button>
+          </Link>
+          <button type="button" className="section-button button">finalizar compra</button>
+        </div>
       </div>
     </>
   );
