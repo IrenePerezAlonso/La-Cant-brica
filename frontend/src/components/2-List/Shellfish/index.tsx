@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import loadProducts from '../../../redux/actions/actionCreator';
 import Products from '../../../types/products';
@@ -32,7 +33,9 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
           mollusckList.map((mollusck) => (
             <li className="ul-list">
               <div>
-                <img src={mollusck.img} alt="fish" className="ul-list__img" />
+                <Link key={mollusck._id} to={`/detail/${mollusck._id}`}>
+                  <img src={mollusck.img} alt="fish" className="ul-list__img" />
+                </Link>
                 <p>
                   {mollusck.name}
                   {mollusck.price}
@@ -51,7 +54,9 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
         crustaceanList.map((crustacean) => (
           <li className="ul-list">
             <div>
-              <img src={crustacean.img} alt="fish" className="ul-list__img" />
+              <Link key={crustacean._id} to={`/detail/${crustacean._id}`}>
+                <img src={crustacean.img} alt="fish" className="ul-list__img" />
+              </Link>
               <p>
                 {crustacean.name}
                 {crustacean.price}

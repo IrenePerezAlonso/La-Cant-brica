@@ -51,13 +51,15 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
       <hr className="hr2" />
       <ul className="productList-products__ul">
         {
-        blueList.map((whiteFish) => (
+        blueList.map((blueFish) => (
           <li className="ul-list">
             <div>
-              <img src={whiteFish.img} alt="fish" className="ul-list__img" />
+              <Link key={blueFish._id} to={`/detail/${blueFish._id}`}>
+                <img src={blueFish.img} alt="fish" className="ul-list__img" />
+              </Link>
               <p>
-                {whiteFish.name}
-                {whiteFish.price}
+                {blueFish.name}
+                {blueFish.price}
                 {' '}
                 €
               </p>

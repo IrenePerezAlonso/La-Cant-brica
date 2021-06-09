@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import loadProducts from '../../../redux/actions/actionCreator';
 import Products from '../../../types/products';
@@ -28,7 +29,9 @@ const CephalopodList: FC <CephalopodProps> = ({ products, dispatch }) => {
           cephalopodList.map((cephalopod) => (
             <li className="ul-list">
               <div>
-                <img src={cephalopod.img} alt="fish" className="ul-list__img" />
+                <Link key={cephalopod._id} to={`/detail/${cephalopod._id}`}>
+                  <img src={cephalopod.img} alt="fish" className="ul-list__img" />
+                </Link>
                 <p>
                   {cephalopod.name}
                   {cephalopod.price}
