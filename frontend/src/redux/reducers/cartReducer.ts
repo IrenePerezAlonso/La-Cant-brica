@@ -27,6 +27,9 @@ function cartReducer(cartList: any = [], action: any) {
       }
       break;
 
+    case actionTypes.DELETE_CART_PRODUCT:
+      return newCartList.filter((product) => product._id !== action.productId);
+
     default:
       return cartList;
   }
