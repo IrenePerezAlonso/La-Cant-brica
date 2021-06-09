@@ -24,7 +24,7 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
 
   return (
     <>
-      <h2 className="productList-products__title-fish">pescados</h2>
+      <h2 className="productList-products__title-fish" id="productList-products__title-fish">pescados</h2>
       <hr className="hr1" />
       <h2 className="productList-products__title-white">Pescado blanco</h2>
       <hr className="hr2" />

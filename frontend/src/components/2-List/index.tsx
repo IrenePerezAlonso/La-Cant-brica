@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
 import { connect } from 'react-redux';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import loadProducts from '../../redux/actions/actionCreator';
 import Products from '../../types/products';
 import FishList from './Fish/index';
@@ -23,9 +24,15 @@ const List: FC<ListProps> = ({ dispatch }) => {
       <div className="productList">
         <h1 className="productList-title">TIENDA</h1>
         <div className="productList-buttons">
-          <button type="button" className="productList-buttons__fishes button">Pescados</button>
-          <button type="button" className="productList-buttons__molluscks button">Mariscos</button>
-          <button type="button" className="productList-buttons__cephalopods button">Cefalópodos</button>
+          <AnchorLink offset={() => 100} href="#productList-products__title-fish">
+            <button type="button" className="productList-buttons__fishes button">Pescados</button>
+          </AnchorLink>
+          <AnchorLink offset={() => 100} href="#productList-products__title-shellfish">
+            <button type="button" className="productList-buttons__molluscks button">Mariscos</button>
+          </AnchorLink>
+          <AnchorLink offset={() => 100} href="#productList-products__title-cephalopod">
+            <button type="button" className="productList-buttons__cephalopods button">Cefalópodos</button>
+          </AnchorLink>
         </div>
         <div className="productList-products">
           <FishList />

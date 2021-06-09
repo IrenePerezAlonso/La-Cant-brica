@@ -22,7 +22,7 @@ const CephalopodList: FC <CephalopodProps> = ({ products, dispatch }) => {
 
   return (
     <>
-      <h2 className="productList-products__title-fish">cefalópodos</h2>
+      <h2 className="productList-products__title-cephalopod" id="productList-products__title-cephalopod">cefalópodos</h2>
       <hr className="hr1" />
       <ul className="productList-products__ul">
         {

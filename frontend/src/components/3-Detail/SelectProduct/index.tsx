@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getProductById } from '../../../redux/actions/actionCreator';
@@ -15,6 +15,7 @@ type DetailProps = {
 
 const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => {
   const { productId }: any = useParams();
+
   useEffect(() => {
     dispatch(getProductById(productId));
   }, []);
@@ -37,7 +38,11 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
         <p className="preparation-choose">añada un comentario si precisa</p>
         <form action="">
           <label htmlFor="preparation">
-            <input type="text" className="comment" placeholder="ej. Quiero el producto en rodajas, filetes, entero, sin cabeza..." />
+            <input
+              type="text"
+              className="comment"
+              placeholder="ej. Quiero el producto en rodajas, filetes, entero, sin cabeza..."
+            />
           </label>
         </form>
       </div>
