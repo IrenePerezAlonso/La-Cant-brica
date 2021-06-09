@@ -76,7 +76,7 @@
   text-transform: uppercase;
 }
 .detail .detail-selectedProduct button:hover {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .detail input {
   border: 2px solid #8AC4D0;

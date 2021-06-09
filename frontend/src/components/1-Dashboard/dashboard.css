@@ -40,7 +40,7 @@
   width: 100%;
 }
 .dashboard .dashboard-content button:hover {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .dashboard .dashboard-content a {
   width: 200px;

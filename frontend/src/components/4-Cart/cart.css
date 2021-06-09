@@ -53,7 +53,7 @@
   width: 20px;
 }
 .cart .cart-section .list-info__elements .list-info__elements-button .elements-button__sum:hover {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .cart .cart-section .list-info__elements .list-info__elements-button .elements-button__res {
   align-items: center;
@@ -68,7 +68,7 @@
   width: 20px;
 }
 .cart .cart-section .list-info__elements .list-info__elements-button .elements-button__res:hover {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .cart .cart-section-empty {
   align-items: center;
@@ -94,7 +94,7 @@
   width: 70px;
 }
 .cart .list-info__elements-delete:hover {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .cart .section-button {
   color: white;
@@ -107,7 +107,7 @@
   text-transform: uppercase;
 }
 .cart .section-button:hover {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .cart img {
   border: 3px solid;

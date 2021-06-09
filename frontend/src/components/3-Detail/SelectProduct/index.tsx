@@ -48,6 +48,7 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
         </Link>
         <button
           type="button"
+          className="buttons-add"
           id={selectedProduct?._id}
           onClick={() => {
             dispatch(addToCart(selectedProduct));
