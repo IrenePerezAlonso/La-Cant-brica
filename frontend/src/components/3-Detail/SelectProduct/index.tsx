@@ -35,7 +35,7 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
       <hr />
       <div className="detail-selectedProduct__preparation">
         <h3 className="preparation-title">preparación</h3>
-        <p className="preparation-choose">añada un comentario si precisa</p>
+        <p className="preparation-choose">Añada un comentario si precisa:</p>
         <form action="">
           <label htmlFor="preparation">
             <input
