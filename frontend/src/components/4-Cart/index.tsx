@@ -2,7 +2,7 @@
 import React, { useEffect, FC } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { loadCart } from '../../redux/actions/actionCart';
+import { loadCart, deleteFromCart, addToCart } from '../../redux/actions/actionCart';
 import './cart.css';
 
 type CartProps = {
@@ -14,6 +14,14 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
   useEffect(() => {
     dispatch(loadCart());
   }, []);
+
+  function getTotalCost(total: number, cost: number) {
+    return total + cost;
+  }
+  function cartTotalCost() {
+    const total = cart.map((x: any) => x.price * x.quantity);
+    return total.reduce(getTotalCost);
+  }
 
   return (
     <>
@@ -37,10 +45,26 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
                             {item.quantity}
                           </p>
                           <div className="list-info__elements-button">
-                            <button type="button" className="elements-button__sum">+</button>
                             <button type="button" className="elements-button__res">-</button>
+                            <button
+                              type="button"
+                              className="elements-button__sum"
+                              id={item?._id}
+                              onClick={() => {
+                                dispatch(addToCart(item));
+                              }}
+                            >
+                              +
+
+                            </button>
                           </div>
-                          <button type="button" className="list-info__elements-delete">Eliminar</button>
+                          <button
+                            type="button"
+                            className="list-info__elements-delete"
+                            onClick={() => dispatch(deleteFromCart(item._id))}
+                          >
+                            Eliminar
+                          </button>
                         </div>
                       </div>
                     </li>
@@ -51,7 +75,15 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
             }
           </ul>
         </div>
-        <div className="cart-title__buttons">
+        <div className="cart-title__totalPrice">
+          <span>
+            Total:
+            {'  '}
+            {cart.length ? cartTotalCost() : 0}
+            €
+          </span>
+        </div>
+        <div className="cart-buttons">
           <Link to="/tienda">
             <button type="button" className="section-button button">seguir comprando</button>
           </Link>
