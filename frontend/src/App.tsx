@@ -11,6 +11,7 @@ import Footer from './components/0-Footer/index';
 import Cart from './components/4-Cart/index';
 import Recipes from './components/6-Recipes/index';
 import Detail from './components/3-Detail/index';
+import Account from './components/8-Account/index';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               <Route exact path="/contacto" component={Contact} />
               <Route exact path="/recetas" component={Recipes} />
               <Route exact path="/detail/:productId" component={Detail} />
+              <Route exact path="/cuenta" component={Account} />
               <Route exact path="/" component={Dashboard} />
             </Switch>
           </BrowserRouter>
