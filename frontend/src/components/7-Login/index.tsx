@@ -32,12 +32,13 @@ const Login: FC<LoginProps> = ({ user, dispatch }) => {
     !user ? (
       <div className="login">
         <h1 className="login-title">login</h1>
-        <div className="login-create">
-          <h2>Crear cuenta</h2>
-          <form className="login">
-            <p>Introduzca su contraseña:</p>
+        <div className="login-acount">
+          <h2 className="login-acount__create">Crear cuenta</h2>
+          <hr />
+          <form className="login-acount__form">
+            <p className="form-emailTitle">Introduzca su email:</p>
             <input type="text" id="email" className="email" placeholder="email" onChange={handleEmail} />
-            <p>Introduzca su password:</p>
+            <p className="form-paswordTitle">Introduzca su password:</p>
             <input type="text" id="password" placeholder="contraseña" onChange={handlePassword} />
           </form>
           <button type="button" className="submit" onClick={handleSubmitLogin}>Submit</button>

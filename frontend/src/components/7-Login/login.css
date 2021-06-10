@@ -13,4 +13,75 @@
   justify-content: center;
   padding: 10px 0 10px;
   text-transform: uppercase;
+}
+.login .login-acount__create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8AC4D0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 20px 5px 15px 5px;
+  text-transform: uppercase;
+}
+.login .login-acount hr {
+  border: none;
+  height: 1px;
+  background-color: #8AC4D0;
+  margin: 15px;
+}
+.login .login-acount__form {
+  margin: 15px;
+}
+.login .login-acount__form .form-emailTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #046582;
+  font-size: 14px;
+  margin: 10px;
+}
+.login .login-acount__form .form-paswordTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #046582;
+  font-size: 14px;
+  margin: 10px;
+}
+.login .login-acount__form input {
+  border: 2px solid #8AC4D0;
+  border-radius: 5px;
+  font-size: 8px;
+  height: 30px;
+  margin: 0px 10px 5px 10px;
+  outline: none;
+  width: 50%;
+}
+.login .login-acount__form input::-moz-placeholder {
+  color: #8AC4D0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.login .login-acount__form input:-ms-input-placeholder {
+  color: #8AC4D0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.login .login-acount__form input::placeholder {
+  color: #8AC4D0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.login .login-acount button {
+  color: white;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 5px;
+  margin: 0px 25px;
+  padding: 1% 5% 1% 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+.login .login-acount button:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }/*# sourceMappingURL=login.css.map */
