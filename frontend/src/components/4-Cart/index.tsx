@@ -1,21 +1,28 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import {
   loadCart, deleteFromCart, addToCart, descreaseProduct
 } from '../../redux/actions/actionCart';
+import Users from '../../types/users';
 import './cart.css';
 
 type CartProps = {
   cart: any,
-  dispatch: any
+  dispatch: any,
+  user: Users
 }
 
-const Cart: FC<CartProps> = ({ cart, dispatch }) => {
+const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
+  const history = useHistory();
   useEffect(() => {
     dispatch(loadCart());
   }, []);
+
+  useEffect(() => {
+    if (!user.token) history.push('/login');
+  });
 
   function getTotalCost(total: number, cost: number) {
     return total + cost;
@@ -108,8 +115,8 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
   );
 };
 
-function mapStateToProps({ cart }: any) {
-  return { cart };
+function mapStateToProps({ cart, user }: any) {
+  return { cart, user };
 }
 
 export default connect(mapStateToProps)(Cart);

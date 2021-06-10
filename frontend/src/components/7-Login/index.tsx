@@ -2,13 +2,13 @@
 import React, { useState, FC } from 'react';
 import { connect } from 'react-redux';
 import getUser from '../../redux/actions/actionLogin';
-import Cart from '../4-Cart/index';
+import Account from '../8-Account/index';
 import Users from '../../types/users';
 import './login.css';
 
 type LoginProps = {
   dispatch: any,
-  user: Users []
+  user: Users
 }
 
 const Login: FC<LoginProps> = ({ user, dispatch }) => {
@@ -29,7 +29,7 @@ const Login: FC<LoginProps> = ({ user, dispatch }) => {
   }
 
   return (
-    !user ? (
+    !user.token ? (
       <div className="login">
         <h1 className="login-title">login</h1>
         <div className="login-acount">
@@ -45,7 +45,7 @@ const Login: FC<LoginProps> = ({ user, dispatch }) => {
         </div>
       </div>
     ) : (
-      <Cart />
+      <Account />
     )
   );
 };
