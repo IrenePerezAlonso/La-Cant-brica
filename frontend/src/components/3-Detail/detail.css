@@ -21,8 +21,9 @@
   border: 3px solid;
   border-color: #8AC4D0;
   border-radius: 5px;
+  display: flex;
   height: 200px;
-  margin: 15px 5px 15px 0px;
+  margin: 15px 0px 15px 0px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

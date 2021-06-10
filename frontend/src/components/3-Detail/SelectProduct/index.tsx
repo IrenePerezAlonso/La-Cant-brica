@@ -10,7 +10,7 @@ import Products from '../../../types/products';
 type DetailProps = {
     cart: any,
     selectedProduct?: Products,
-    dispatch: any
+    dispatch: any,
 }
 
 const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => {
