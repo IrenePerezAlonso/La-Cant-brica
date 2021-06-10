@@ -6,4 +6,4 @@ export default interface Users {
     addres: string,
     phone: number,
     cart: Array<object>
-}
+};
