@@ -1,0 +1,71 @@
+$blueDark: #046582;
+$blueLight: #8AC4D0;
+$orange: #F39189;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.account {
+    .account-title {
+        align-items: center;
+        background-color: $blueLight;
+        color: white;
+        display: flex;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        padding: 10px 0 10px;
+        text-transform: uppercase;
+    }
+    .account-subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blueLight;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        margin: 20px 5px 15px 5px;
+        text-transform: uppercase;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: $blueLight;
+        margin: 15px;
+    }
+    .account-data {
+        border: 1px solid $blueLight;
+        border-radius: 5px;
+        margin: 20px 15px 15px 15px;
+        &__email {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $blueDark;
+            font-size: 14px;
+            margin: 10px; 
+        }
+        &__addres {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $blueDark;
+            font-size: 14px;
+            margin: 10px;
+        }
+        button {
+            color: white;
+            background-color: $blueLight;
+            border: none;
+            border-radius: 5px;
+            font-size: 8px;
+            height: 20px;
+            margin: 0px 25px;
+            padding: 1% 5% 1% 5%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            width: 110px;
+            &:hover {
+                cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
+            }
+        }
+    }
+}
