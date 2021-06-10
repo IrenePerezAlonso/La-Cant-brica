@@ -2,6 +2,7 @@
 import React, { useEffect, FC } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import loadProducts from '../../../redux/actions/actionCreator';
 import Products from '../../../types/products';
 import '../list.css';
@@ -47,6 +48,9 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
           ))
         }
       </ul>
+      <AnchorLink offset={() => 100} href="#productList-title">
+        <button type="button">volver arriba</button>
+      </AnchorLink>
       <h2 className="productList-products__title-blue">Pescado azul</h2>
       <hr className="hr2" />
       <ul className="productList-products__ul">
@@ -68,6 +72,9 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
         ))
         }
       </ul>
+      <AnchorLink offset={() => 100} href="#productList-title">
+        <button type="button">volver arriba</button>
+      </AnchorLink>
     </>
   );
 };

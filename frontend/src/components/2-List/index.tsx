@@ -18,7 +18,7 @@ const List: FC = () => {
   return (
     <>
       <div className="productList">
-        <h1 className="productList-title">TIENDA</h1>
+        <h1 className="productList-title" id="productList-title">TIENDA</h1>
         <div className="productList-buttons">
           <AnchorLink offset={() => 100} href="#productList-products__title-fish">
             <button type="button" className="productList-buttons__fishes button">Pescados</button>
