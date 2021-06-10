@@ -5,6 +5,7 @@ export default interface Products {
         subType: string,
         img: string,
         price: number,
+        notes: string,
         preparation: {
                 entire: Boolean,
                 withOutHeadGuts: Boolean,
