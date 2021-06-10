@@ -7,7 +7,7 @@ function Recipes() {
       <div className="recipes">
         <h1 className="recipes-title">recetas</h1>
         <div className="recipes-merluza">
-          <h2 className="recipes-merluza-title">merluza en salsa</h2>
+          <h2 className="recipes-merluza__title">merluza en salsa</h2>
           <div className="recipes-merluza__info">
             <img src="https://i.blogs.es/bb1db2/merluza_salsa_verde/450_1000.jpg" alt="merluza en salsa" />
             <p className="recipes-merluza__info-ingredients">
@@ -47,8 +47,9 @@ function Recipes() {
             con ellos cada plato antes de servir.
           </p>
         </div>
+        <hr />
         <div className="recipes-bonito">
-          <h2 className="recipes-bonito-title">bonito en salsa de tomate</h2>
+          <h2 className="recipes-bonito__title">bonito en salsa de tomate</h2>
           <div className="recipes-bonito__info">
             <img src="https://live.mrf.io/statics/i/ps/www.cocinacaserayfacil.net/wp-content/uploads/2018/09/Bonito-con-tomate-1.jpg?width=1200&enable=upscale" alt="bonito en salsa" />
             <p className="recipes-bonito__info-ingredients">
@@ -79,8 +80,9 @@ function Recipes() {
             para que el bonito no se seque.
           </p>
         </div>
+        <hr />
         <div className="recipes-gambas">
-          <h2 className="recipes-gambas-title">gambas al ajillo</h2>
+          <h2 className="recipes-gambas__title">gambas al ajillo</h2>
           <div className="recipes-gambas__info">
             <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/94AF9570-D42C-43E7-A50A-D918C9D71A1D/Derivates/40AB004F-F245-47AD-BAAB-CFDFACD3E37C.jpg" alt="gambas al ajillo" />
             <p className="recipes-gambas__info-ingredients">
@@ -116,8 +118,9 @@ function Recipes() {
             Acompañarlas de un buen pan y un buen vino blanco bien fresquito.
           </p>
         </div>
+        <hr />
         <div className="recipes-dorada">
-          <h2 className="recipes-dorada-title">dorada al horno</h2>
+          <h2 className="recipes-dorada__title">dorada al horno</h2>
           <div className="recipes-dorada__info">
             <img src="https://i.pinimg.com/736x/b1/3c/8f/b13c8f264812537de6b0ad47ebd1a171.jpg" alt="dorada al horno" />
             <p className="recipes-dorada__info-ingredients">
@@ -154,8 +157,9 @@ function Recipes() {
             el perejil bien picadito y salamos. Dejamos cocer unos 8 minutos.
           </p>
         </div>
+        <hr />
         <div className="recipes-salmon">
-          <h2 className="recipes-salmon-title">salmon al papillote</h2>
+          <h2 className="recipes-salmon__title">salmon al papillote</h2>
           <div className="recipes-salmon__info">
             <img src="https://www.cocinaabuenashoras.com/files/salmon-en-papillote-11.jpg" alt="salmon al papillote" />
             <p className="recipes-salmon__info-ingredients">
@@ -186,10 +190,11 @@ function Recipes() {
             horno mediante unos pliegues que aseguren que vaya a quedar más o menos hermético.
           </p>
         </div>
+        <hr />
         <div className="recipes-cigalas">
-          <h2 className="recipes-cigalas-title">cigalas a la plancha</h2>
+          <h2 className="recipes-cigalas__title">cigalas a la plancha</h2>
           <div className="recipes-cigalas__info">
-            <img src="https://sazonygusto.com/wp-content/uploads/2019/03/Saz%C3%B3n-y-gusto-Cigalas-a-la-plancha.jpg" alt="cigalas a la plancha" />
+            <img src="https://elmundoenrecetas.s3.amazonaws.com/uploads/recipe/main_image/541/Como_abrir_una_cigala.jpg" alt="cigalas a la plancha" />
             <p className="recipes-cigalas__info-ingredients">
               <p>Ingredientes:</p>
               <p>
@@ -218,8 +223,9 @@ function Recipes() {
             perfecta para añadir al marisco.
           </p>
         </div>
+        <hr />
         <div className="recipes-almejas">
-          <h2 className="recipes-almejas-title">almejas a la marinera</h2>
+          <h2 className="recipes-almejas__title">almejas a la marinera</h2>
           <div className="recipes-almejas__info">
             <img src="https://lacocinademasito.com/wp-content/uploads/Almejas-a-la-marinera-24.jpg" alt="almejas a la marinera" />
             <p className="recipes-almejas__info-ingredients">
@@ -260,8 +266,9 @@ function Recipes() {
             que la salsa alcance el punto de espesor que nos guste y apagamos el fuego.
           </p>
         </div>
+        <hr />
         <div className="recipes-sepia">
-          <h2 className="recipes-sepia-title">sepia a la plancha</h2>
+          <h2 className="recipes-sepia__title">sepia a la plancha</h2>
           <div className="recipes-sepia__info">
             <img src="https://solorecetas.com/wp-content/uploads/2016/11/sepia-a-la-plancha.jpg" alt="sepia a la plancha" />
             <p className="recipes-sepia__info-ingredients">
