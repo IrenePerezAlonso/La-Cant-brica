@@ -52,11 +52,14 @@ const Cart: FC<CartProps> = ({ cart, dispatch }) => {
                               className="elements-button__res"
                               id={item?._id}
                               onClick={() => {
-                                dispatch(descreaseProduct(item));
+                                if (item.quantity === 0) {
+                                  dispatch(deleteFromCart(item._id));
+                                } else {
+                                  dispatch(descreaseProduct(item));
+                                }
                               }}
                             >
                               -
-
                             </button>
                             <button
                               type="button"
