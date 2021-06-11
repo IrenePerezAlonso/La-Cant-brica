@@ -62,4 +62,23 @@
 }
 .account .account-data button:hover {
   cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
+}
+.account .button-tienda {
+  color: white;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  height: 30px;
+  margin: auto;
+  padding: 1% 5% 1% 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account .button-tienda:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }/*# sourceMappingURL=account.css.map */

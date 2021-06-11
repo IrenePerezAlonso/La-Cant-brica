@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Users from '../../types/users';
 import './account.css';
@@ -26,6 +27,9 @@ const Account: FC<AccountProps> = ({ user }: any) => (
           <button type="button">editar dirección</button>
         </p>
       </div>
+      <Link to="/tienda">
+        <button type="button" className="button-tienda">Ir a la tienda</button>
+      </Link>
     </div>
   </>
 );
