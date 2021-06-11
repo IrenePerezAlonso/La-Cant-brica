@@ -27,10 +27,3 @@ export function descreaseProduct(product: any) {
     product
   };
 }
-
-export function addNotes(product: any) {
-  return {
-    type: actionTypes.ADD_NOTES,
-    product
-  };
-}
