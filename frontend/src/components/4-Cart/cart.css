@@ -131,4 +131,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.notes {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  color: #8AC4D0;
+  font-size: 10px;
 }/*# sourceMappingURL=cart.css.map */
