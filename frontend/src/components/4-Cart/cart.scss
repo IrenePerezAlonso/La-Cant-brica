@@ -135,7 +135,10 @@
 }
 
 .notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     color:#8AC4D0;
-    font-size: 10px;
+    font-size: 12px;
 }
