@@ -23,7 +23,7 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
 
   return (
     <>
-      <img src={selectedProduct?.img} alt="imagen producto seleccionado" />
+      <img src={selectedProduct?.img} alt="imagen producto seleccionado" className="img-selectedProduct" />
       <h2 className="detail-selectedProduct__name">
         {selectedProduct?.name}
         {' '}

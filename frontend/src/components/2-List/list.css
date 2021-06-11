@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+.productList {
+  margin-bottom: 20px;
+}
 .productList .productList-title {
   align-items: center;
   background-color: #8AC4D0;

@@ -101,8 +101,6 @@
   cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
 .cart img {
-  border: 3px solid;
-  border-color: #8AC4D0;
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
