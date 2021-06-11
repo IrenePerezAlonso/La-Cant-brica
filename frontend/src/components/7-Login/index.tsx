@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, FC } from 'react';
 import { connect } from 'react-redux';
-import getUser from '../../redux/actions/actionLogin';
+import { getUser } from '../../redux/actions/actionUser';
 import Account from '../8-Account/index';
 import Users from '../../types/users';
 import './login.css';

@@ -4,7 +4,7 @@ import actionTypes from './actionTypes';
 
 const url = 'http://localhost:2021/login';
 
-export default function getUser(email: string, password: string) {
+export function getUser(email: string, password: string) {
   return async (dispatch: Dispatch) => {
     try {
       const { data } = await axios.post(url, { email, password });
@@ -17,5 +17,12 @@ export default function getUser(email: string, password: string) {
         type: actionTypes.POST_ERROR_LOGIN
       });
     }
+  };
+}
+
+export function updateUser(user: any) {
+  return {
+    type: actionTypes.UPDATE_USER,
+    user
   };
 }

@@ -6,6 +6,9 @@ function loginReducer(user = {}, action: {type: String, user: User}) {
     case actionTypes.POST_LOGIN:
       return action.user;
 
+    case actionTypes.UPDATE_USER:
+      return action.user;
+
     default:
       return user;
   }
