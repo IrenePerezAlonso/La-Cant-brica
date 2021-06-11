@@ -17,6 +17,7 @@ const Login: FC<LoginProps> = ({ user, dispatch }) => {
 
   function handleEmail(event: any) {
     setEmail(event.target.value);
+    localStorage.setItem('userRegister', event.target.value);
   }
 
   function handlePassword(event: any) {

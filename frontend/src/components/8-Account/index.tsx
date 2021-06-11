@@ -17,7 +17,8 @@ const Account: FC<AccountProps> = ({ user }: any) => (
       <div className="account-data">
         <p className="account-data__email">
           correo electrónico:
-          {user.email}
+          {' '}
+          {localStorage.getItem('userRegister')}
         </p>
         <p className="account-data__addres">
           dirección de envío:
