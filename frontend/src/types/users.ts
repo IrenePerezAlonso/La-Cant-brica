@@ -1,9 +1,12 @@
 export default interface Users {
-    email: string,
-    password: string,
     token: string,
-    name: string,
-    addres: string,
-    phone: number,
-    cart: Array<object>
+    refreshToken: string,
+    user: {
+        cart: Array<object>
+        email: string,
+        password: string,
+        address: string,
+        phone: number,
+        name: string,
+    }
 };
