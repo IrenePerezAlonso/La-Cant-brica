@@ -9,8 +9,24 @@
   background-color: #8AC4D0;
   color: white;
   display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   padding: 10px 0 10px;
   text-transform: uppercase;
+}
+.recipes img {
+  border-radius: 5px;
+  display: flex;
+  height: 200px;
+  margin: 0px 15px 15px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #8AC4D0;
+  margin: 15px 0 10px 0;
+  width: 50%;
 }/*# sourceMappingURL=recipes.css.map */

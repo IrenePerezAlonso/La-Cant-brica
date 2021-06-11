@@ -9,7 +9,6 @@
   background-color: #8AC4D0;
   color: white;
   display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   padding: 10px 0 10px;
 }
@@ -26,7 +25,6 @@
   border-radius: 5px;
   margin-top: 10px;
   padding: 1% 5% 1% 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
 .productList button:hover {
@@ -40,21 +38,18 @@
   font-size: 18px;
   margin-top: 15px;
   text-transform: uppercase;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .productList .productList-products__title-shellfish {
   color: #8AC4D0;
   font-size: 18px;
   margin-top: 15px;
   text-transform: uppercase;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .productList .productList-products__title-cephalopod {
   color: #8AC4D0;
   font-size: 18px;
   margin-top: 15px;
   text-transform: uppercase;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .productList .productList-products .hr1 {
   border: none;
@@ -64,7 +59,6 @@
 }
 .productList .productList-products__title-white {
   color: #8AC4D0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -108,14 +102,12 @@
   color: #8AC4D0;
   display: flex;
   flex-direction: column;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   justify-content: center;
   margin: 5px 0px 5px 5px;
 }
 .productList .productList-products__title-blue {
   color: #8AC4D0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   margin-top: 10px;
   text-transform: uppercase;

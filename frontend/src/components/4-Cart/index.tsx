@@ -16,6 +16,7 @@ type CartProps = {
 
 const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
   const history = useHistory();
+
   useEffect(() => {
     dispatch(loadCart());
   }, []);

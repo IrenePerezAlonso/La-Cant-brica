@@ -13,9 +13,24 @@ $blueLight: #8AC4D0;
         background-color: $blueLight;
         color: white;
         display: flex;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         justify-content: center;
         padding: 10px 0 10px;
         text-transform: uppercase;
     }
+    img {
+        border-radius: 5px;
+        display: flex;
+        height: 200px;
+        margin: 0px 15px 15px 0px;
+        object-fit: cover;
+        width: auto; 
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: $blueLight;
+    margin: 15px 0 10px 0; 
+    width: 50%;
 }

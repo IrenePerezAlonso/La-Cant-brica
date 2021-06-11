@@ -14,7 +14,6 @@ $orange: #F39189;
         background-color: $blueLight;
         color: white;
         display: flex;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         justify-content: center;
         padding: 10px 0 10px;
         text-transform: uppercase;
@@ -25,7 +24,6 @@ $orange: #F39189;
             justify-content: center;
             align-items: center;
             color: $blueLight;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 18px;
             margin: 20px 5px 15px 5px;
             text-transform: uppercase;
@@ -39,13 +37,13 @@ $orange: #F39189;
         &__form {
             margin: 15px;
             .form-emailTitle {
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
                 color: $blueDark;
                 font-size: 14px;
                 margin: 10px;
             }
             .form-paswordTitle {
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
                 color: $blueDark;
                 font-size: 14px; 
                 margin: 10px;
@@ -72,7 +70,6 @@ $orange: #F39189;
             border-radius: 5px;
             margin: 0px 25px;
             padding: 1% 5% 1% 5%;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-transform: uppercase;
             &:hover {
                 cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;

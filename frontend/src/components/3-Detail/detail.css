@@ -9,7 +9,6 @@
   background-color: #8AC4D0;
   color: white;
   display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   padding: 10px 0 10px;
   text-transform: uppercase;
@@ -30,13 +29,11 @@
 }
 .detail .detail-selectedProduct__name {
   color: #046582;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
 }
 .detail .detail-selectedProduct__price {
   color: #F39189;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -48,14 +45,12 @@
 }
 .detail .detail-selectedProduct__preparation .preparation-title {
   color: #8AC4D0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 .detail .detail-selectedProduct__preparation .preparation-choose {
   color: #8AC4D0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
 }
 .detail .detail-selectedProduct hr {
@@ -76,35 +71,31 @@
   border-radius: 5px;
   margin: 10px 0 15px;
   padding: 1% 5% 1% 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
 .detail .detail-selectedProduct button:hover {
   cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
 }
-.detail input {
-  border: 2px solid #8AC4D0;
+.detail .comment {
+  border: #8AC4D0;
   border-radius: 5px;
   height: 50px;
   margin-top: 15px;
   outline: none;
   width: 100%;
 }
-.detail input::-moz-placeholder {
+.detail .comment::-moz-placeholder {
   color: #8AC4D0;
-  display: flex;
-  flex-wrap: wrap;
+  text-indent: 10px;
   font-size: 12px;
 }
-.detail input:-ms-input-placeholder {
+.detail .comment:-ms-input-placeholder {
   color: #8AC4D0;
-  display: flex;
-  flex-wrap: wrap;
+  text-indent: 10px;
   font-size: 12px;
 }
-.detail input::placeholder {
+.detail .comment::placeholder {
   color: #8AC4D0;
-  display: flex;
-  flex-wrap: wrap;
+  text-indent: 10px;
   font-size: 12px;
 }/*# sourceMappingURL=detail.css.map */
