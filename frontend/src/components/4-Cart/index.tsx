@@ -86,6 +86,9 @@ const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
                           >
                             Eliminar
                           </button>
+                          <p className="list-info__elements-note notes">
+                            {item.notes}
+                          </p>
                         </div>
                       </div>
                     </li>

@@ -15,6 +15,7 @@ type DetailProps = {
 
 const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => {
   const { productId }: any = useParams();
+  const [notes, setNotes] = useState('');
 
   useEffect(() => {
     dispatch(getProductById(productId));
@@ -37,10 +38,11 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
         <h3 className="preparation-title">preparación</h3>
         <p className="preparation-choose">Añada un comentario si precisa:</p>
         <form action="">
-          <label htmlFor="preparation">
+          <label htmlFor="preparation" className="comment">
             <input
               type="text"
               className="comment"
+              onChange={(event) => setNotes(event.target.value)}
               placeholder="ej. Quiero el producto en rodajas, filetes, entero, sin cabeza..."
             />
           </label>
@@ -56,7 +58,7 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
           className="buttons-add"
           id={selectedProduct?._id}
           onClick={() => {
-            dispatch(addToCart(selectedProduct));
+            dispatch(addToCart({ ...selectedProduct, notes }));
           }}
         >
           añadir al carrito
