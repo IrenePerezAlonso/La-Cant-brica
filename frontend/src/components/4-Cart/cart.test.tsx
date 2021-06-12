@@ -3,7 +3,7 @@ import Cart from './index';
 import { render } from '../../test-utils';
 
 describe('Given a Cart component', () => {
-  test('Should render a phone number', () => {
+  test('Should render a title', () => {
     const { container } = render(<Cart />);
     const chooseTag = container.querySelector('h1');
 

@@ -3,7 +3,7 @@ import Recipes from './index';
 import { render } from '../../test-utils';
 
 describe('Given a Recipes component', () => {
-  test('Should render a phone number', () => {
+  test('Should render a title', () => {
     const { container } = render(<Recipes />);
     const chooseTag = container.querySelector('h1');
 

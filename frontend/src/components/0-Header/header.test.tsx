@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './index';
 import { render } from '../../test-utils';
 
-describe('Given a Footer component', () => {
+describe('Given a Header component', () => {
   test('Should render a phone number', () => {
     const { container } = render(<Header />);
     const chooseTag = container.querySelector('p');
