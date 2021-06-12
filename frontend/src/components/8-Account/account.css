@@ -61,7 +61,7 @@
   width: 110px;
 }
 .account .account-data button:hover {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }
 .account .button-tienda {
   color: white;
@@ -80,5 +80,5 @@
   align-items: center;
 }
 .account .button-tienda:hover {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }/*# sourceMappingURL=account.css.map */

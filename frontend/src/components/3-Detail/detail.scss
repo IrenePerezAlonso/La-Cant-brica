@@ -1,16 +1,16 @@
 @import '../../styles/colors';
 
-// @media(min-width:375px){
-//     .img-selectedProduct {
-//         width: 100vw;
-//     }
-// }
+@media(min-width:375px){
+    .img-selectedProduct {
+        width: 100vw;
+    }
+}
 
-// @media(min-width:768){
-//     .comment {
-//         width: 50vw;
-//     }
-// }
+@media(min-width:768){
+    .comment {
+        width: 50vw;
+    }
+}
 
 *, *::after, *::before {
     margin: 0;
@@ -33,10 +33,10 @@
         .img-selectedProduct {
             border-radius: 5px;
             display: flex;
-            height: 200px;
+            height: 300px;
             margin: 15px auto 15px auto;
             object-fit: cover;
-            width: auto;
+            width: 100%;
         }
         &__name {
             color: $blueDark;
@@ -86,7 +86,7 @@
             padding: 1% 5% 1% 5%;
             text-transform: uppercase;
             &:hover {
-                cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
+                cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
             }
         }
     }

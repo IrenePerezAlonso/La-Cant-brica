@@ -45,7 +45,7 @@ const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
                   cart.map((item: any) => (
                     <li className="cart-section__list">
                       <div className="section__list-info">
-                        <img src={item.img} alt="" />
+                        <img src={item.img} alt="" className="list-info__img" />
                         <div className="list-info__elements">
                           <p className="list-info__elements-letters">
                             {item.name}

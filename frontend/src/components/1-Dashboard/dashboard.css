@@ -38,7 +38,7 @@
   width: 100%;
 }
 .dashboard .dashboard-content button:hover {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto !important;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }
 .dashboard .dashboard-content a {
   width: 200px;
