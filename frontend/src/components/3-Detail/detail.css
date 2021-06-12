@@ -72,16 +72,18 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.detail .detail-selectedProduct button {
+.detail .detail-selectedProduct .buttons-detail {
   color: white;
   background-color: #8AC4D0;
   border: none;
   border-radius: 5px;
+  height: 30px;
   margin: 10px 0 15px;
   padding: 1% 5% 1% 5%;
   text-transform: uppercase;
+  width: 155px;
 }
-.detail .detail-selectedProduct button:hover {
+.detail .detail-selectedProduct .buttons-detail:hover {
   cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }
 .detail .comment {

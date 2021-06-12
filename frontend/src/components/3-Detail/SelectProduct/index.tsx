@@ -51,11 +51,11 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
       <hr />
       <div className="detail-selectedProduct__buttons">
         <Link to="/tienda">
-          <button type="button">seguir comprando</button>
+          <button type="button" className="buttons-detail">seguir comprando</button>
         </Link>
         <button
           type="button"
-          className="buttons-add"
+          className="buttons-detail"
           id={selectedProduct?._id}
           onClick={() => {
             dispatch(addToCart({ ...selectedProduct, notes }));

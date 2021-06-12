@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
 }
-.dashboard .dashboard-content button {
+.dashboard .dashboard-content .dashboard-content__button {
   color: white;
   background-color: #8AC4D0;
   border: none;
@@ -37,7 +37,7 @@
   text-transform: uppercase;
   width: 100%;
 }
-.dashboard .dashboard-content button:hover {
+.dashboard .dashboard-content .dashboard-content__button:hover {
   cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }
 .dashboard .dashboard-content a {

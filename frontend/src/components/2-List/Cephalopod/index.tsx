@@ -45,7 +45,7 @@ const CephalopodList: FC <CephalopodProps> = ({ products, dispatch }) => {
         }
       </ul>
       <AnchorLink offset={() => 100} href="#productList-title">
-        <button type="button">volver arriba</button>
+        <button type="button" className="goBack-button">volver arriba</button>
       </AnchorLink>
     </>
   );

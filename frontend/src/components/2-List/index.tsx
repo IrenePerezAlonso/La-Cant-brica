@@ -21,13 +21,13 @@ const List: FC = () => {
         <h1 className="productList-title" id="productList-title">TIENDA</h1>
         <div className="productList-buttons">
           <AnchorLink offset={() => 100} href="#productList-products__title-fish">
-            <button type="button" className="productList-buttons__fishes button">Pescados</button>
+            <button type="button" className="productList-buttons__button">Pescados</button>
           </AnchorLink>
           <AnchorLink offset={() => 100} href="#productList-products__title-shellfish">
-            <button type="button" className="productList-buttons__molluscks button">Mariscos</button>
+            <button type="button" className="productList-buttons__button">Mariscos</button>
           </AnchorLink>
           <AnchorLink offset={() => 100} href="#productList-products__title-cephalopod">
-            <button type="button" className="productList-buttons__cephalopods button">Cefalópodos</button>
+            <button type="button" className="productList-buttons__button">Cefalópodos</button>
           </AnchorLink>
         </div>
         <div className="productList-products">

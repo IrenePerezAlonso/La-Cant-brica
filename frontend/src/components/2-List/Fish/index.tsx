@@ -49,7 +49,7 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
         }
       </ul>
       <AnchorLink offset={() => 100} href="#productList-title">
-        <button type="button">volver arriba</button>
+        <button type="button" className="goBack-button">volver arriba</button>
       </AnchorLink>
       <h2 className="productList-products__title-blue">Pescado azul</h2>
       <hr className="hr2" />
@@ -73,7 +73,7 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
         }
       </ul>
       <AnchorLink offset={() => 100} href="#productList-title">
-        <button type="button">volver arriba</button>
+        <button type="button" className="goBack-button">volver arriba</button>
       </AnchorLink>
     </>
   );

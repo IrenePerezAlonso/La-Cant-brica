@@ -67,7 +67,7 @@
   flex-wrap: wrap;
   font-size: 12px;
 }
-.login .login-acount button {
+.login .login-acount .submit-button {
   color: white;
   background-color: #8AC4D0;
   border: none;
@@ -76,6 +76,6 @@
   padding: 1% 5% 1% 5%;
   text-transform: uppercase;
 }
-.login .login-acount button:hover {
+.login .login-acount .submit-button:hover {
   cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }/*# sourceMappingURL=login.css.map */
