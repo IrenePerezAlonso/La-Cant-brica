@@ -37,10 +37,10 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
             {' '}
             {localStorage.getItem('userRegister')}
           </p>
+          <p className="account-data__address-title">Dirección de envío:</p>
           <p className="account-data__addres">
             <form className="account-acount__form">
-              <p className="form-addressTitle">Dirección de envío</p>
-              <input type="text" id="address" placeholder="dirección" onChange={handleAddress} />
+              <input type="text" id="address" className="address-input" placeholder="dirección" onChange={handleAddress} />
             </form>
             {user.user.address}
             <button type="button" className="button-address" onClick={sendData}>editar dirección</button>

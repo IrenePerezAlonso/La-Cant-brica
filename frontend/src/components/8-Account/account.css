@@ -41,11 +41,38 @@
   font-size: 14px;
   margin: 10px;
 }
-.account .account-data__addres {
+.account .account-data .account-data__address-title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #046582;
   font-size: 14px;
   margin: 10px;
+}
+.account .account-data__addres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.account .account-data__addres .address-input {
+  border-color: #8AC4D0;
+  border-radius: 5px;
+  outline: none;
+}
+.account .account-data__addres .address-input::-moz-placeholder {
+  color: #8AC4D0;
+  text-indent: 10px;
+  font-size: 12px;
+}
+.account .account-data__addres .address-input:-ms-input-placeholder {
+  color: #8AC4D0;
+  text-indent: 10px;
+  font-size: 12px;
+}
+.account .account-data__addres .address-input::placeholder {
+  color: #8AC4D0;
+  text-indent: 10px;
+  font-size: 12px;
 }
 .account .account-data .button-address {
   color: white;
@@ -54,7 +81,7 @@
   border-radius: 5px;
   font-size: 8px;
   height: 20px;
-  margin: 0px 25px;
+  margin: 0px 10px;
   padding: 1% 5% 1% 5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;

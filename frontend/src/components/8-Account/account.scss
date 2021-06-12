@@ -43,11 +43,28 @@
             font-size: 14px;
             margin: 10px; 
         }
-        &__addres {
+        .account-data__address-title{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: $blueDark;
             font-size: 14px;
             margin: 10px;
+        }
+        &__addres {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            .address-input {
+                border-color: $blueLight;
+                border-radius: 5px;
+                outline: none;
+                &::placeholder {
+                    color: $blueLight;
+                    text-indent: 10px;
+                    font-size: 12px;
+                }
+            }
         }
         .button-address {
             color: white;
@@ -56,7 +73,7 @@
             border-radius: 5px;
             font-size: 8px;
             height: 20px;
-            margin: 0px 25px;
+            margin: 0px 10px;
             padding: 1% 5% 1% 5%;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-transform: uppercase;
