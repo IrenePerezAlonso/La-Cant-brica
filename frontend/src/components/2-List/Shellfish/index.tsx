@@ -32,7 +32,7 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
       <ul className="productList-products__ul">
         {
           mollusckList.map((mollusck) => (
-            <li className="ul-list">
+            <li className="ul-list" key={mollusck._id}>
               <div>
                 <Link key={mollusck._id} to={`/detail/${mollusck._id}`}>
                   <img src={mollusck.img} alt="fish" className="ul-list__img" />
@@ -56,7 +56,7 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
       <ul className="productList-products__ul">
         {
         crustaceanList.map((crustacean) => (
-          <li className="ul-list">
+          <li className="ul-list" key={crustacean._id}>
             <div>
               <Link key={crustacean._id} to={`/detail/${crustacean._id}`}>
                 <img src={crustacean.img} alt="fish" className="ul-list__img" />

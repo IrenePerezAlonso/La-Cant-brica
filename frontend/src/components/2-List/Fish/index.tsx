@@ -32,7 +32,7 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
       <ul className="productList-products__ul">
         {
           whiteList.map((whiteFish) => (
-            <li className="ul-list">
+            <li className="ul-list" key={whiteFish._id}>
               <div>
                 <Link key={whiteFish._id} to={`/detail/${whiteFish._id}`}>
                   <img src={whiteFish.img} alt="fish" className="ul-list__img" />
@@ -56,7 +56,7 @@ const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
       <ul className="productList-products__ul">
         {
         blueList.map((blueFish) => (
-          <li className="ul-list">
+          <li className="ul-list" key={blueFish._id}>
             <div>
               <Link key={blueFish._id} to={`/detail/${blueFish._id}`}>
                 <img src={blueFish.img} alt="fish" className="ul-list__img" />

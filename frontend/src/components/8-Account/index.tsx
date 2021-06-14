@@ -39,13 +39,13 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
             {localStorage.getItem('userRegister')}
           </p>
           <p className="account-data__address-title">Dirección de envío:</p>
-          <p className="account-data__addres">
+          <div className="account-data__addres">
             <form className="account-acount__form">
               <input type="text" id="address" className="address-input" placeholder="dirección" onChange={handleAddress} />
             </form>
             {user.user.address}
             <button type="button" className="button-address" onClick={sendData}>añadir dirección</button>
-          </p>
+          </div>
         </div>
         <Link to="/tienda">
           <button type="button" className="button-tienda">Ir a la tienda</button>

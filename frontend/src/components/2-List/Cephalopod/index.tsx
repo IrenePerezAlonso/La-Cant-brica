@@ -28,7 +28,7 @@ const CephalopodList: FC <CephalopodProps> = ({ products, dispatch }) => {
       <ul className="productList-products__ul">
         {
           cephalopodList.map((cephalopod) => (
-            <li className="ul-list">
+            <li className="ul-list" key={cephalopod._id}>
               <div>
                 <Link key={cephalopod._id} to={`/detail/${cephalopod._id}`}>
                   <img src={cephalopod.img} alt="fish" className="ul-list__img" />
