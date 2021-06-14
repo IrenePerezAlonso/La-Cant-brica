@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import React, { useState, FC } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { updateUser } from '../../redux/actions/actionUser';
+import React, { useState, FC, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { connect, useDispatch } from 'react-redux';
+import { updateUser, logout } from '../../redux/actions/actionUser';
 import Users from '../../types/users';
 import './account.css';
 
@@ -11,7 +11,9 @@ type AccountProps = {
     dispatch: any
 }
 
-const Account: FC<AccountProps> = ({ user, dispatch }) => {
+const Account: FC<AccountProps> = ({ user }) => {
+  const dispatch = useDispatch();
+  const history = useHistory();
   const [newUser, setNewUser] = useState(user.user);
 
   function sendData(event: any) {
@@ -19,13 +21,16 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
     event.preventDefault();
     dispatch(updateUser(newUserData));
   }
-
   function handleAddress(event: any) {
     setNewUser({
       ...newUser,
       address: event.target.value
     });
   }
+
+  useEffect(() => {
+    if (!user.token) history.push('/login');
+  });
 
   return (
     <>
@@ -47,6 +52,7 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
             {user.user.address}
             <button type="button" className="button-address" onClick={sendData}>añadir dirección</button>
           </div>
+          <button type="button" onClick={() => dispatch(logout())}>Logout</button>
         </div>
         <Link to="/tienda">
           <button type="button" className="button-tienda">Ir a la tienda</button>

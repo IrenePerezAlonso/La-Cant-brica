@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import productsReducer from './productsReducer';
 import selectedProductReducer from './selectedProductReducer';
 import cartReducer from './cartReducer';
-import loginReducer from './loginReducer';
+import loginReducer from './UserReducer';
 
 const rootReducer = combineReducers({
   productsStore: productsReducer,

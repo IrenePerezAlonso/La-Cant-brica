@@ -9,6 +9,9 @@ function loginReducer(user = {}, action: {type: string, user: User}) {
     case actionTypes.UPDATE_USER:
       return action.user;
 
+    case actionTypes.POST_LOGOUT:
+      return action.user;
+
     default:
       return user;
   }
