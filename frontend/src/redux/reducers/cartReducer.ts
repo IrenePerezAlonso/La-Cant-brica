@@ -38,12 +38,6 @@ function cartReducer(cartList: any = [], action: any) {
             ? { ...product, quantity: itemDecreased.quantity -= 1 }
             : product)
         );
-      } else {
-        newCartList.map(
-          (product) => (action.product._id === product._id
-            ? { ...product, quantity: itemDecreased.quantity -= 1 }
-            : product)
-        );
       }
 
       break;

@@ -34,36 +34,6 @@ export default function loadProducts() {
   };
 }
 
-// export function addProduct(product: Object) {
-//   return async (dispatch: Dispatch) => {
-//     const { data } = await axios.post(url, product);
-//     dispatch({
-//       type: actionTypes.ADD_PRODUCT,
-//       product: data
-//     });
-//   };
-// }
-
-// export function deleteProduct(productId: String) {
-//   return async (dispatch: Dispatch) => {
-//     await axios.delete(`${config}/${productId}`);
-//     dispatch({
-//       type: actionTypes.DELETE_PRODUCT,
-//       productId
-//     });
-//   };
-// }
-
-// export function updateProduct(product: {_id: String}) {
-//   return async (dispatch: Dispatch) => {
-//     const { data } = await axios.put(`${config}/${product._id}`, product);
-//     dispatch({
-//       type: actionTypes.UPDATE_PRODUCT,
-//       product: data
-//     });
-//   };
-// }
-
 export function getProductById(productId: any) {
   return async (dispatch: Dispatch) => {
     const { data } = await axios(`${url}/${productId}`, token);
@@ -73,13 +43,3 @@ export function getProductById(productId: any) {
     });
   };
 }
-
-// export function loadProduct(product: {_id: String}) {
-//   return async (dispatch: Dispatch) => {
-//     const { data } = await axios(`${config}/${product._id}`);
-//     dispatch({
-//       type: actionTypes.LOAD_PRODUCT,
-//       product: data
-//     });
-//   };
-// }

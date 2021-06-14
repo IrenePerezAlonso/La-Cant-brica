@@ -1,7 +1,7 @@
 import actionTypes from '../actions/actionTypes';
 import Products from '../../types/Products';
 
-function productsReducer(products = [], action: {type: String, products: Products}) {
+function productsReducer(products = [], action: {type: string, products: Products}) {
   switch (action.type) {
     case actionTypes.LOAD_PRODUCTS:
       return action.products;
