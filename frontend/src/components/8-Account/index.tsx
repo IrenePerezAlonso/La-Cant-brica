@@ -25,6 +25,7 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
       address: event.target.value
     });
   }
+
   return (
     <>
       <div className="account">
@@ -43,7 +44,7 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
               <input type="text" id="address" className="address-input" placeholder="dirección" onChange={handleAddress} />
             </form>
             {user.user.address}
-            <button type="button" className="button-address" onClick={sendData}>editar dirección</button>
+            <button type="button" className="button-address" onClick={sendData}>añadir dirección</button>
           </p>
         </div>
         <Link to="/tienda">
