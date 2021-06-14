@@ -6,13 +6,13 @@ const config: Object = {
   method: 'get',
   url: 'http://localhost:2021/api/products',
   headers: {
-    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYjYzNTI2OTA1OGYzNGY0ODc3MDVjYSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzA0ODE2NCwiZXhwIjoxNjIzNTI4MTY0fQ.kXkNVqADpGaG5wTbyzXvQsoJrNQajK6OUMKIw39aEmQ'
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzY1MzIxNCwiZXhwIjoxNjI0MTMzMjE0fQ.guYx67lKdJtceSCnbC0x7AkQGViZqHDiUBsLAMlau4I'
   }
 };
 
 const token = {
   headers: {
-    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYjYzNTI2OTA1OGYzNGY0ODc3MDVjYSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzA0ODE2NCwiZXhwIjoxNjIzNTI4MTY0fQ.kXkNVqADpGaG5wTbyzXvQsoJrNQajK6OUMKIw39aEmQ'
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzY1MzIxNCwiZXhwIjoxNjI0MTMzMjE0fQ.guYx67lKdJtceSCnbC0x7AkQGViZqHDiUBsLAMlau4I'
   }
 };
 
