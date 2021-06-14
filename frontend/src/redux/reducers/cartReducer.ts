@@ -33,7 +33,7 @@ function cartReducer(cartList: any = [], action: any) {
       const itemDecreased = newCartList.find(({ _id }) => action.product._id === _id);
 
       if (itemDecreased) {
-        newCartList.map(
+        newCartList.forEach(
           (product) => (action.product._id === product._id
             ? { ...product, quantity: itemDecreased.quantity -= 1 }
             : product)
