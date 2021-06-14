@@ -15,8 +15,9 @@ const Account: FC<AccountProps> = ({ user, dispatch }) => {
   const [newUser, setNewUser] = useState(user.user);
 
   function sendData(event: any) {
+    const newUserData = { ...user, user: { ...newUser } };
     event.preventDefault();
-    dispatch(updateUser(newUser));
+    dispatch(updateUser(newUserData));
   }
 
   function handleAddress(event: any) {
