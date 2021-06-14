@@ -1,5 +1,5 @@
 import actionTypes from '../actions/actionTypes';
-import Products from '../../types/products';
+import Products from '../../types/Products';
 
 export default function productsReducer(products = {}, action: {type: String, product: Products}) {
   switch (action.type) {

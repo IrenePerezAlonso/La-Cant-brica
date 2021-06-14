@@ -29,5 +29,7 @@ productsRouter,);
 server.use('/user', passport.authenticate('jwt', { session: false }),
 userRoutes,);
 
+const localhost = `localhost:${port}`;
+
 server.listen(port, 
-    () => debug(`Server is running in ${chalk.yellow(`localhost:${port}`)}`));
+    () => debug(`Server is running in ${chalk.yellow(localhost)}`));

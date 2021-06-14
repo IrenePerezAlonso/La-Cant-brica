@@ -9,4 +9,4 @@ export default interface Users {
         phone: number,
         name: string,
     }
-};
+}

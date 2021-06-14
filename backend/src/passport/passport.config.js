@@ -7,8 +7,8 @@ passport.use(
   'signup',
   new localStrategy.Strategy(
     {
-      usernameField: 'email',
-      passwordField: 'password',
+      usernameField: process.env.MY_EMAIL,
+      passwordField: process.env.MY_PASSWORD,
     },
     async (email, password, done) => {
       try {
@@ -26,8 +26,8 @@ passport.use(
   'login',
   new localStrategy.Strategy(
     {
-      usernameField: 'email',
-      passwordField: 'password',
+      usernameField: process.env.MY_EMAIL,
+      passwordField: process.env.MY_PASSWORD,
     },
     async (email, password, done) => {
       try {

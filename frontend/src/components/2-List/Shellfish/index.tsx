@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import loadProducts from '../../../redux/actions/actionCreator';
-import Products from '../../../types/products';
+import Products from '../../../types/Products';
 import '../list.css';
 
 type ListShellfishProps = {
