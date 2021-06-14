@@ -34,6 +34,9 @@
   text-transform: uppercase;
   width: 100px;
 }
+.productList .productList-buttons .productList-buttons__button:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
 .productList .productList-products {
   margin: 0px 15px 0px 15px;
 }
