@@ -42,12 +42,24 @@
             color: $blueDark;
             font-size: 14px;
             margin: 10px; 
+            .email-email {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: $blueLight;
+                font-size: 14px;
+                margin: 10px; 
+            }
         }
         .account-data__address-title{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: $blueDark;
             font-size: 14px;
             margin: 10px;
+        }
+        .account-data__address-address {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $blueLight;
+            font-size: 14px;
+            margin: 10px; 
         }
         &__addres {
             display: flex;
@@ -58,7 +70,9 @@
             .address-input {
                 border-color: $blueLight;
                 border-radius: 5px;
+                height: 30px;                
                 outline: none;
+                width: 200px;                
                 &::placeholder {
                     color: $blueLight;
                     text-indent: 10px;
@@ -81,6 +95,22 @@
             &:hover {
                 cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
             }
+        }
+    }
+    .button-logout {
+        color: white;
+        background-color: $blueLight;
+        border: none;
+        border-radius: 5px;
+        font-size: 8px;
+        height: 20px;
+        margin: 5px;
+        padding: 1% 5% 1% 5%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        width: 110px;
+        &:hover {
+            cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
         }
     }
     .button-tienda {

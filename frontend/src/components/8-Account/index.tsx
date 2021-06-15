@@ -42,17 +42,21 @@ const Account: FC<AccountProps> = ({ user }) => {
           <p className="account-data__email">
             correo electrónico:
             {' '}
-            {localStorage.getItem('userRegister')}
+            <p className="email-email">
+              {localStorage.getItem('userRegister')}
+            </p>
           </p>
           <p className="account-data__address-title">Dirección de envío:</p>
+          <p className="account-data__address-address">
+            {user.user.address}
+          </p>
           <div className="account-data__addres">
             <form className="account-acount__form">
-              <input type="text" id="address" className="address-input" placeholder="dirección" onChange={handleAddress} />
+              <input type="text" id="address" className="address-input" placeholder="añada una dirección" onChange={handleAddress} />
             </form>
-            {user.user.address}
             <button type="button" className="button-address" onClick={sendData}>añadir dirección</button>
           </div>
-          <button type="button" onClick={() => dispatch(logout())}>Logout</button>
+          <button type="button" className="button-logout" onClick={() => dispatch(logout())}>Logout</button>
         </div>
         <Link to="/tienda">
           <button type="button" className="button-tienda">Ir a la tienda</button>
