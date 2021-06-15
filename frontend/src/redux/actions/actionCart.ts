@@ -14,7 +14,7 @@ export function loadCart() {
   };
 }
 
-export function deleteFromCart(productId: any) {
+export function deleteFromCart(productId: string) {
   return {
     type: actionTypes.DELETE_CART_PRODUCT,
     productId
