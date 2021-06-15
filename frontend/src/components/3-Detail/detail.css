@@ -1,13 +1,3 @@
-@media (min-width: 375px) {
-  .img-selectedProduct {
-    width: 100vw;
-  }
-}
-@media (min-width: 768) {
-  .comment {
-    width: 50vw;
-  }
-}
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -108,4 +98,15 @@
   color: #8AC4D0;
   text-indent: 10px;
   font-size: 12px;
+}
+
+@media (min-width: 375px) {
+  .img-selectedProduct {
+    width: 50vw;
+  }
+}
+@media (min-width: 768) {
+  .comment {
+    width: 50px;
+  }
 }/*# sourceMappingURL=detail.css.map */
