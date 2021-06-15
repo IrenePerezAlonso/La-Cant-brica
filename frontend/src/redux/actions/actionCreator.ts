@@ -18,7 +18,7 @@ const token = {
 
 const url = 'http://localhost:2021/api/products';
 
-export default function loadProducts() {
+export function loadProducts() {
   return async (dispatch: Dispatch) => {
     try {
       const { data } = await axios(config);
@@ -43,3 +43,8 @@ export function getProductById(productId: any) {
     });
   };
 }
+
+export default () => ({
+  loadProducts,
+  getProductById
+});

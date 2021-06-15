@@ -20,4 +20,16 @@ describe('Given an actionCreators', () => {
       products: data
     });
   });
+  test('getProductById should return an action, with an actionType LOAD_PRODUCT', async () => {
+    const dispatch = jest.fn();
+    const data = 'Bacalao';
+    axios.mockResolvedValue(data);
+
+    await getProductById()(dispatch);
+
+    expect(dispatch).toHaveBeenCalledWith({
+      type: actionTypes.LOAD_PRODUCT,
+      products: data
+    });
+  });
 });
