@@ -109,7 +109,7 @@
                 .ul-list__img {
                     border-radius: 5px;
                     width: 150px;
-                    height: 150px;
+                    max-height: 150px;
                     margin: 5px;
                     object-fit: cover;
                     display: flex;

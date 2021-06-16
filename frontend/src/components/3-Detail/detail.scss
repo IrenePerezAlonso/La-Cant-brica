@@ -21,7 +21,7 @@
         .img-selectedProduct {
             border-radius: 5px;
             display: flex;
-            height: 300px;
+            max-height: 300px;
             margin: 15px auto 15px auto;
             object-fit: cover;
             width: 100%;
