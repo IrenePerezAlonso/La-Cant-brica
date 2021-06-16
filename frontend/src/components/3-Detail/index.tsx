@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { FC } from 'react';
 import { connect } from 'react-redux';
-import Products from '../../types/Products';
+import Products from '../../types/products';
 import ProductDetail from './SelectProduct/index';
 import './detail.css';
 

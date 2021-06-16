@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getProductById } from '../../../redux/actions/actionCreator';
 import { addToCart } from '../../../redux/actions/actionCart';
-import Products from '../../../types/Products';
+import Products from '../../../types/products';
 
 type DetailProps = {
     cart: any,
