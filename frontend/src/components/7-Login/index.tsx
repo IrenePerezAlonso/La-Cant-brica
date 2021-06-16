@@ -40,7 +40,7 @@ const Login: FC<LoginProps> = ({ user, dispatch }) => {
             <p className="form-emailTitle">Introduzca su email:</p>
             <input type="text" id="email" className="email" placeholder="email" onChange={handleEmail} />
             <p className="form-paswordTitle">Introduzca su password:</p>
-            <input type="text" id="password" placeholder="contraseña" onChange={handlePassword} />
+            <input type="password" id="password" placeholder="contraseña" onChange={handlePassword} />
           </form>
           <button type="button" className="submit-button" onClick={handleSubmitLogin}>Submit</button>
         </div>
