@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { FC } from 'react';
 import { connect } from 'react-redux';
-import Products from '../../types/products';
-// import ProductDetail from './SelectProduct/index';
+import Products from '../../types/Products';
+import ProductDetail from './SelectProduct/index';
+import './detail.css';
 
 type DetailProps = {
     products: Products [],
@@ -10,10 +11,10 @@ type DetailProps = {
 }
 
 const Detail: FC<DetailProps> = () => (
-  <div className="productList">
-    <h1 className="productList-title">TIENDA</h1>
-    <div className="productList-products">
-      {/* <ProductDetail /> */}
+  <div className="detail">
+    <h1 className="detail-title">TIENDA</h1>
+    <div className="detail-selectedProduct">
+      <ProductDetail />
     </div>
   </div>
 );

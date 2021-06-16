@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 export default interface Products {
         _id: string,
         name: string,
@@ -5,13 +6,14 @@ export default interface Products {
         subType: string,
         img: string,
         price: number,
+        notes: string,
         preparation: {
-                entire: Boolean,
-                withOutHeadGuts: Boolean,
-                withOutThorn: Boolean,
-                fillet: Boolean,
-                slices:Boolean,
-                fresh: Boolean,
-                cooked: Boolean
+                entire: boolean,
+                withOutHeadGuts: boolean,
+                withOutThorn: boolean,
+                fillet: boolean,
+                slices:boolean,
+                fresh: boolean,
+                cooked: boolean
         }
-};
+}

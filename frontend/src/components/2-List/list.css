@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+.productList {
+  margin-bottom: 20px;
+}
 .productList .productList-title {
   align-items: center;
   background-color: #8AC4D0;
   color: white;
   display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   padding: 10px 0 10px;
 }
@@ -17,27 +19,56 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.productList .productList-buttons .productList-buttons__button {
+  align-items: center;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  height: 25px;
+  justify-content: center;
+  margin: 10px 15px 0px 15px;
+  text-transform: uppercase;
+  width: 100px;
+}
+.productList .productList-buttons .productList-buttons__button:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
+.productList .productList-products {
   margin: 0px 15px 0px 15px;
 }
-.productList button {
+.productList .productList-products .goBack-button {
   color: white;
   background-color: #8AC4D0;
   border: none;
   border-radius: 5px;
   margin-top: 10px;
   padding: 1% 5% 1% 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
-.productList .productList-products {
-  margin: 0px 15px 0px 15px;
+.productList .productList-products .goBack-button:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
 }
 .productList .productList-products__title-fish {
   color: #8AC4D0;
   font-size: 18px;
   margin-top: 15px;
   text-transform: uppercase;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.productList .productList-products__title-shellfish {
+  color: #8AC4D0;
+  font-size: 18px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.productList .productList-products__title-cephalopod {
+  color: #8AC4D0;
+  font-size: 18px;
+  margin-top: 15px;
+  text-transform: uppercase;
 }
 .productList .productList-products .hr1 {
   border: none;
@@ -47,7 +78,6 @@
 }
 .productList .productList-products__title-white {
   color: #8AC4D0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -72,15 +102,17 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.productList .productList-products__ul .ul-list img {
+.productList .productList-products__ul .ul-list .ul-list__img {
   border-radius: 5px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
   transition: transform 0.2s;
 }
-.productList .productList-products__ul .ul-list img:hover {
+.productList .productList-products__ul .ul-list .ul-list__img:hover {
   transform: scale(1.5);
   border: 3px solid;
   border-color: #8AC4D0;
@@ -89,14 +121,12 @@
   color: #8AC4D0;
   display: flex;
   flex-direction: column;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   justify-content: center;
   margin: 5px 0px 5px 5px;
 }
 .productList .productList-products__title-blue {
   color: #8AC4D0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   margin-top: 10px;
   text-transform: uppercase;

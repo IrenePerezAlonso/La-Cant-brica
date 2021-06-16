@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import Products from './products';
+import Products from './Products';
 import actionTypes from '../redux/actions/actionTypes';
 
 export interface LoadProducts {

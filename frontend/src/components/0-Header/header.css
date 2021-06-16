@@ -7,7 +7,6 @@
 .header {
   display: flex;
   flex-direction: column;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   width: 100%;
@@ -18,9 +17,19 @@
 .header .header-login {
   align-items: center;
   background-color: #046582;
+  color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 5px;
+  text-transform: lowercase;
+}
+.header .header-login__info {
+  display: flex;
+  flex-direction: row;
+  font-size: 8px;
+}
+.header .header-login__info-email {
+  margin-left: 20px;
 }
 .header .header-login__login {
   color: white;
@@ -53,8 +62,24 @@
   width: 160px;
 }
 .header .header-nav__cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #8AC4D0;
   border-radius: 5px;
   padding: 1%;
   width: 35px;
+  height: 35px;
+}
+.header .header-nav__cart-img {
+  padding-left: 5px;
+  width: 80%;
+}
+.header .header-nav__cart-length {
+  padding-right: 5px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

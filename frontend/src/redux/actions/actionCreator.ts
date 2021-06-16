@@ -6,13 +6,21 @@ const config: Object = {
   method: 'get',
   url: 'http://localhost:2021/api/products',
   headers: {
-    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYjYzNTI2OTA1OGYzNGY0ODc3MDVjYSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzA0ODE2NCwiZXhwIjoxNjIzNTI4MTY0fQ.kXkNVqADpGaG5wTbyzXvQsoJrNQajK6OUMKIw39aEmQ'
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzY1MzIxNCwiZXhwIjoxNjI0MTMzMjE0fQ.guYx67lKdJtceSCnbC0x7AkQGViZqHDiUBsLAMlau4I'
+  }
+};
+
+const token = {
+  headers: {
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzY1MzIxNCwiZXhwIjoxNjI0MTMzMjE0fQ.guYx67lKdJtceSCnbC0x7AkQGViZqHDiUBsLAMlau4I'
   }
 };
 
 const url = 'http://localhost:2021/api/products';
 
-export default function loadProducts() {
+export function loadProducts() {
+  // eslint-disable-next-line no-debugger
+  debugger;
   return async (dispatch: Dispatch) => {
     try {
       const { data } = await axios(config);
@@ -28,39 +36,9 @@ export default function loadProducts() {
   };
 }
 
-// export function addProduct(product: Object) {
-//   return async (dispatch: Dispatch) => {
-//     const { data } = await axios.post(url, product);
-//     dispatch({
-//       type: actionTypes.ADD_PRODUCT,
-//       product: data
-//     });
-//   };
-// }
-
-// export function deleteProduct(productId: String) {
-//   return async (dispatch: Dispatch) => {
-//     await axios.delete(`${config}/${productId}`);
-//     dispatch({
-//       type: actionTypes.DELETE_PRODUCT,
-//       productId
-//     });
-//   };
-// }
-
-// export function updateProduct(product: {_id: String}) {
-//   return async (dispatch: Dispatch) => {
-//     const { data } = await axios.put(`${config}/${product._id}`, product);
-//     dispatch({
-//       type: actionTypes.UPDATE_PRODUCT,
-//       product: data
-//     });
-//   };
-// }
-
 export function getProductById(productId: any) {
   return async (dispatch: Dispatch) => {
-    const { data } = await axios(`${url}/${productId}`);
+    const { data } = await axios(`${url}/${productId}`, token);
     dispatch({
       type: actionTypes.LOAD_PRODUCT,
       product: data
@@ -68,25 +46,7 @@ export function getProductById(productId: any) {
   };
 }
 
-// export function loadProduct(product: {_id: String}) {
-//   return async (dispatch: Dispatch) => {
-//     const { data } = await axios(`${config}/${product._id}`);
-//     dispatch({
-//       type: actionTypes.LOAD_PRODUCT,
-//       product: data
-//     });
-//   };
-// }
-
-// export function login(user: object) {
-//   return {
-//     type: actionTypes.AUTH_LOGIN,
-//     user
-//   };
-// }
-
-// export function logout() {
-//   return {
-//     type: actionTypes.AUTH_LOGOUT
-//   };
-// }
+export default () => ({
+  loadProducts,
+  getProductById
+});

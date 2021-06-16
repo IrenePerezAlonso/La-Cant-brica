@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import loadProducts from '../../../redux/actions/actionCreator';
-import Products from '../../../types/products';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { loadProducts } from '../../../redux/actions/actionCreator';
+import Products from '../../../types/Products';
 import '../list.css';
 
 type ListShellfishProps = {
@@ -23,16 +25,18 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
 
   return (
     <>
-      <h2 className="productList-products__title-fish">mariscos</h2>
+      <h2 className="productList-products__title-shellfish" id="productList-products__title-shellfish">mariscos</h2>
       <hr className="hr1" />
       <h2 className="productList-products__title-white">moluscos</h2>
       <hr className="hr2" />
       <ul className="productList-products__ul">
         {
           mollusckList.map((mollusck) => (
-            <li className="ul-list">
+            <li className="ul-list" key={mollusck._id}>
               <div>
-                <img src={mollusck.img} alt="fish" className="ul-list__img" />
+                <Link key={mollusck._id} to={`/detail/${mollusck._id}`}>
+                  <img src={mollusck.img} alt="fish" className="ul-list__img" />
+                </Link>
                 <p>
                   {mollusck.name}
                   {mollusck.price}
@@ -44,14 +48,19 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
           ))
         }
       </ul>
+      <AnchorLink offset={() => 100} href="#productList-title">
+        <button type="button" className="goBack-button">volver arriba</button>
+      </AnchorLink>
       <h2 className="productList-products__title-blue">crustáceos</h2>
       <hr className="hr2" />
       <ul className="productList-products__ul">
         {
         crustaceanList.map((crustacean) => (
-          <li className="ul-list">
+          <li className="ul-list" key={crustacean._id}>
             <div>
-              <img src={crustacean.img} alt="fish" className="ul-list__img" />
+              <Link key={crustacean._id} to={`/detail/${crustacean._id}`}>
+                <img src={crustacean.img} alt="fish" className="ul-list__img" />
+              </Link>
               <p>
                 {crustacean.name}
                 {crustacean.price}
@@ -63,6 +72,9 @@ const ShellfishList: FC<ListShellfishProps> = ({ products, dispatch }) => {
         ))
         }
       </ul>
+      <AnchorLink offset={() => 100} href="#productList-title">
+        <button type="button" className="goBack-button">volver arriba</button>
+      </AnchorLink>
     </>
   );
 };

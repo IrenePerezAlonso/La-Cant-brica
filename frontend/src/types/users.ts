@@ -1,8 +1,13 @@
-export interface Users {
-    email: string,
-    password: string,
-    name: string,
-    addres: string,
-    phone: number,
-    cart: Array<object>
+/* eslint-disable semi */
+export default interface Users {
+    token: string,
+    refreshToken: string,
+    user: {
+        cart: Array<object>
+        email: string,
+        password: string,
+        address: string,
+        phone: number,
+        name: string,
+    }
 }

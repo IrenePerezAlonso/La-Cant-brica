@@ -1,0 +1,77 @@
+@import '../../styles/colors';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    .login-title {
+        align-items: center;
+        background-color: $blueLight;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 10px;
+        text-transform: uppercase;
+    }
+    .login-acount {
+        &__create {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $blueLight;
+            font-size: 18px;
+            margin: 20px 5px 15px 5px;
+            text-transform: uppercase;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: $blueLight;
+            margin: 15px;
+        }
+        &__form {
+            margin: 15px;
+            .form-emailTitle {
+
+                color: $blueDark;
+                font-size: 14px;
+                margin: 10px;
+            }
+            .form-paswordTitle {
+
+                color: $blueDark;
+                font-size: 14px; 
+                margin: 10px;
+            }
+            input {
+                border: 2px solid $blueLight;
+                border-radius: 5px;
+                height: 30px;
+                margin: 0px 10px 5px 10px;
+                outline: none;
+                width: 50%;
+                &::placeholder {
+                    color: $blueLight;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 12px;
+                }
+            }
+        }
+        .submit-button {
+            color: white;
+            background-color: $blueLight;
+            border: none;
+            border-radius: 5px;
+            margin: 0px 25px;
+            padding: 1% 5% 1% 5%;
+            text-transform: uppercase;
+            &:hover {
+                cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+            }
+        }
+    }  
+}

@@ -1,5 +1,4 @@
-$blueDark: #046582;
-$blueLight: #8AC4D0;
+@import '../../styles/colors';
 
 *, *::after, *::before {
     margin: 0;
@@ -10,7 +9,6 @@ $blueLight: #8AC4D0;
 .header {
     display: flex;
     flex-direction: column;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     width: 100%;
@@ -20,9 +18,19 @@ $blueLight: #8AC4D0;
     .header-login {
         align-items: center;
         background-color: $blueDark;
+        color: white;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding: 5px;
+        text-transform: lowercase;
+        &__info {
+            display: flex;
+            flex-direction: row;
+            font-size: 8px;
+        }
+        &__info-email {
+            margin-left: 20px;
+        }
         &__login {
             color: white;
             margin-left: 1em;
@@ -54,12 +62,27 @@ $blueLight: #8AC4D0;
             width: 160px;
         }
         &__cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $blueLight;
             border-radius: 5px;
             padding: 1%;
             width: 35px;
+            height: 35px;
+        }
+        &__cart-img {
+            padding-left: 5px;
+            width: 80%;
+        }
+        &__cart-length {
+            padding-right: 5px;
+            color: white;
         }
     }
+}
+a {
+    text-decoration: none;
 }
 
 

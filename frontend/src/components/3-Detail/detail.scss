@@ -1,0 +1,108 @@
+@import '../../styles/colors';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detail {
+    .detail-title {
+        align-items: center;
+        background-color: $blueLight;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 10px;
+        text-transform: uppercase;
+    }
+    .detail-selectedProduct {
+        margin: 0px 15px 0px 15px;
+        .img-selectedProduct {
+            border-radius: 5px;
+            display: flex;
+            max-height: 300px;
+            margin: 15px auto 15px auto;
+            object-fit: cover;
+            width: 100%;
+        }
+        &__name {
+            color: $blueDark;
+            font-size: 18px; 
+            text-transform: uppercase;
+        }
+        &__price {
+            color: $orange;
+            font-size: 30px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        &__preparation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .preparation-title {
+                color: $blueLight;
+
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            .preparation-choose {
+                color: $blueLight;
+
+                font-size: 14px;
+            }
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: $blueLight;
+            margin: 15px 0 10px 0;
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .buttons-detail {
+            color: white;
+            background-color: $blueLight;
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            margin: 10px 0 15px;
+            padding: 1% 5% 1% 5%;
+            text-transform: uppercase;
+            width: 155px;
+            &:hover {
+                cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+            }
+        }
+    }
+    .comment {
+        border-color: $blueLight;
+        border-radius: 5px;
+        height: 50px;
+        margin-top: 15px;
+        outline: none;
+        width: 100%;
+        &::placeholder {
+            color: $blueLight;
+            text-indent: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media(min-width:375px){
+    .img-selectedProduct {
+        width: 50vw;
+    }
+}
+
+@media(min-width:768){
+    .comment {
+        width: 50px;
+    }
+}

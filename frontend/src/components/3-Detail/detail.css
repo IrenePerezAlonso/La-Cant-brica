@@ -1,0 +1,112 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.detail .detail-title {
+  align-items: center;
+  background-color: #8AC4D0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px;
+  text-transform: uppercase;
+}
+.detail .detail-selectedProduct {
+  margin: 0px 15px 0px 15px;
+}
+.detail .detail-selectedProduct .img-selectedProduct {
+  border-radius: 5px;
+  display: flex;
+  height: 300px;
+  margin: 15px auto 15px auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.detail .detail-selectedProduct__name {
+  color: #046582;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.detail .detail-selectedProduct__price {
+  color: #F39189;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.detail .detail-selectedProduct__preparation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detail .detail-selectedProduct__preparation .preparation-title {
+  color: #8AC4D0;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.detail .detail-selectedProduct__preparation .preparation-choose {
+  color: #8AC4D0;
+  font-size: 14px;
+}
+.detail .detail-selectedProduct hr {
+  border: none;
+  height: 1px;
+  background-color: #8AC4D0;
+  margin: 15px 0 10px 0;
+}
+.detail .detail-selectedProduct__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.detail .detail-selectedProduct .buttons-detail {
+  color: white;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  margin: 10px 0 15px;
+  padding: 1% 5% 1% 5%;
+  text-transform: uppercase;
+  width: 155px;
+}
+.detail .detail-selectedProduct .buttons-detail:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
+.detail .comment {
+  border-color: #8AC4D0;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: 15px;
+  outline: none;
+  width: 100%;
+}
+.detail .comment::-moz-placeholder {
+  color: #8AC4D0;
+  text-indent: 10px;
+  font-size: 12px;
+}
+.detail .comment:-ms-input-placeholder {
+  color: #8AC4D0;
+  text-indent: 10px;
+  font-size: 12px;
+}
+.detail .comment::placeholder {
+  color: #8AC4D0;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+@media (min-width: 375px) {
+  .img-selectedProduct {
+    width: 50vw;
+  }
+}
+@media (min-width: 768) {
+  .comment {
+    width: 50px;
+  }
+}/*# sourceMappingURL=detail.css.map */

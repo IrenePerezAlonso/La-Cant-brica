@@ -1,5 +1,4 @@
-$blueDark: #046582;
-$blueLight: #8AC4D0;
+@import '../../styles/colors';
 
 *, *::after, *::before {
     margin: 0;
@@ -9,23 +8,137 @@ $blueLight: #8AC4D0;
 
 .cart {
     .cart-title {
+        list-style-type: none;
         align-items: center;
         background-color: $blueLight;
         color: white;
         display: flex;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
         justify-content: center;
         padding: 10px 0 10px;
         text-transform: uppercase;
     }
-    button {
+    .cart-section {
+        margin: 0px 15px 0px 15px;
+        .cart-section__list {
+            list-style-type:none
+        }
+        .list-info__elements {
+            display: flex;
+            .list-info__elements-letters {
+                color: $blueLight;
+        
+                font-size: 14px; 
+                margin-right: 20px;
+            }
+            .list-info__elements-button {
+                display: flex;
+                justify-content: space-between;
+                width: 45px;
+                .elements-button__sum{
+                    align-items: center;
+                    background-color: $blueLight;
+                    border: none;
+                    border-radius: 10px;
+                    color: white;
+                    display: flex;
+                    font-size: 20px;
+                    height: 20px;
+                    justify-content: center;
+                    width: 20px;
+                    &:hover {
+                        cursor:  url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+                    }
+                }
+                .elements-button__res {
+                    align-items: center;
+                    background-color: $blueLight;
+                    border: none;
+                    border-radius: 10px;
+                    color: white;
+                    display: flex;
+                    font-size: 20px;
+                    height: 20px;
+                    justify-content: center;
+                    width: 20px;
+                    &:hover {
+                        cursor:  url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+                    }
+                }
+            }
+        }
+    }
+    .cart-section-empty {
+        align-items: center;
+        display: flex;
+        color: $blueLight;
+
+        font-size: 18px; 
+        margin: 15px 5px 15px 5px;
+        text-transform: uppercase;
+        justify-content: space-around;
+    }
+    .list-info__elements-delete {
+        align-items: center;
+        background-color: #F39189;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        font-size: 12px;
+        height: 20px;
+        margin-left: 10px;
+        justify-content: center;
+        width: 70px;
+        &:hover {
+            cursor:  url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+        }
+    }
+    .section-button {
         color: white;
         background-color: $blueLight;
         border: none;
         border-radius: 5px;
-        margin-top: 10px;
+        margin: 15px 15px 15px 15px;
         padding: 1% 5% 1% 5%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
         text-transform: uppercase;
+        &:hover {
+            cursor:  url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+        }
     }
+    .list-info__img {
+        border-radius: 5px;
+        object-fit: cover;
+        width: 100%;
+        max-height: 200px;
+        margin: 15px 0px 15px 0px;
+    }
+    .cart-title__totalPrice {
+        align-items: center;
+        background-color: $blueLight;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+
+        font-size: 18px; 
+        justify-content: center;
+        margin: 15px;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+    .cart-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color:#8AC4D0;
+    font-size: 12px;
 }

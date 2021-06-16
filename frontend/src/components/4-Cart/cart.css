@@ -5,22 +5,132 @@
 }
 
 .cart .cart-title {
+  list-style-type: none;
   align-items: center;
   background-color: #8AC4D0;
   color: white;
   display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   padding: 10px 0 10px;
   text-transform: uppercase;
 }
-.cart button {
+.cart .cart-section {
+  margin: 0px 15px 0px 15px;
+}
+.cart .cart-section .cart-section__list {
+  list-style-type: none;
+}
+.cart .cart-section .list-info__elements {
+  display: flex;
+}
+.cart .cart-section .list-info__elements .list-info__elements-letters {
+  color: #8AC4D0;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.cart .cart-section .list-info__elements .list-info__elements-button {
+  display: flex;
+  justify-content: space-between;
+  width: 45px;
+}
+.cart .cart-section .list-info__elements .list-info__elements-button .elements-button__sum {
+  align-items: center;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  height: 20px;
+  justify-content: center;
+  width: 20px;
+}
+.cart .cart-section .list-info__elements .list-info__elements-button .elements-button__sum:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
+.cart .cart-section .list-info__elements .list-info__elements-button .elements-button__res {
+  align-items: center;
+  background-color: #8AC4D0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  height: 20px;
+  justify-content: center;
+  width: 20px;
+}
+.cart .cart-section .list-info__elements .list-info__elements-button .elements-button__res:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
+.cart .cart-section-empty {
+  align-items: center;
+  display: flex;
+  color: #8AC4D0;
+  font-size: 18px;
+  margin: 15px 5px 15px 5px;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+.cart .list-info__elements-delete {
+  align-items: center;
+  background-color: #F39189;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-size: 12px;
+  height: 20px;
+  margin-left: 10px;
+  justify-content: center;
+  width: 70px;
+}
+.cart .list-info__elements-delete:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
+.cart .section-button {
   color: white;
   background-color: #8AC4D0;
   border: none;
   border-radius: 5px;
-  margin-top: 10px;
+  margin: 15px 15px 15px 15px;
   padding: 1% 5% 1% 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
+}
+.cart .section-button:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat675.cur), auto;
+}
+.cart .list-info__img {
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin: 15px 0px 15px 0px;
+}
+.cart .cart-title__totalPrice {
+  align-items: center;
+  background-color: #8AC4D0;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin: 15px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.cart .cart-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  color: #8AC4D0;
+  font-size: 12px;
 }/*# sourceMappingURL=cart.css.map */

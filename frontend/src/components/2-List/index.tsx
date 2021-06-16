@@ -1,19 +1,16 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, FC } from 'react';
-import { connect } from 'react-redux';
-import loadProducts from '../../redux/actions/actionCreator';
-import Products from '../../types/products';
+import { useDispatch } from 'react-redux';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { loadProducts } from '../../redux/actions/actionCreator';
 import FishList from './Fish/index';
 import ShellfishList from './Shellfish/index';
 import CephalopodList from './Cephalopod/index';
 import './list.css';
 
-type ListProps = {
-    products: Products [],
-    dispatch: any
-}
+const List: FC = () => {
+  const dispatch = useDispatch();
 
-const List: FC<ListProps> = ({ dispatch }) => {
   useEffect(() => {
     dispatch(loadProducts());
   }, []);
@@ -21,11 +18,17 @@ const List: FC<ListProps> = ({ dispatch }) => {
   return (
     <>
       <div className="productList">
-        <h1 className="productList-title">TIENDA</h1>
+        <h1 className="productList-title" id="productList-title">TIENDA</h1>
         <div className="productList-buttons">
-          <button type="button" className="productList-buttons__fishes button">Pescados</button>
-          <button type="button" className="productList-buttons__molluscks button">Mariscos</button>
-          <button type="button" className="productList-buttons__cephalopods button">Cefalópodos</button>
+          <AnchorLink offset={() => 100} href="#productList-products__title-fish">
+            <button type="button" className="productList-buttons__button">Pescados</button>
+          </AnchorLink>
+          <AnchorLink offset={() => 100} href="#productList-products__title-shellfish">
+            <button type="button" className="productList-buttons__button">Mariscos</button>
+          </AnchorLink>
+          <AnchorLink offset={() => 100} href="#productList-products__title-cephalopod">
+            <button type="button" className="productList-buttons__button">Cefalópodos</button>
+          </AnchorLink>
         </div>
         <div className="productList-products">
           <FishList />
@@ -37,8 +40,4 @@ const List: FC<ListProps> = ({ dispatch }) => {
   );
 };
 
-function mapStateToProps(store: any) {
-  return { products: store.productsStore };
-}
-
-export default connect(mapStateToProps)(List);
+export default List;
