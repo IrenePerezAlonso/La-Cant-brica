@@ -19,6 +19,8 @@ const token = {
 const url = 'http://localhost:2021/api/products';
 
 export function loadProducts() {
+  // eslint-disable-next-line no-debugger
+  debugger;
   return async (dispatch: Dispatch) => {
     try {
       const { data } = await axios(config);

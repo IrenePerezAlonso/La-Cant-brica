@@ -43,6 +43,7 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
               type="text"
               className="comment"
               id="comment"
+              data-testid="comment"
               onChange={(event) => setNotes(event.target.value)}
               placeholder="ej. Quiero el producto en rodajas, filetes, entero, sin cabeza..."
             />
@@ -58,6 +59,7 @@ const ProductDetail: FC<DetailProps> = ({ selectedProduct, dispatch, cart }) => 
           type="button"
           className="buttons-detail"
           id="buttons-add-to-cart"
+          data-testid="buttons-detail"
           onClick={() => {
             dispatch(addToCart({ ...selectedProduct, notes }));
           }}

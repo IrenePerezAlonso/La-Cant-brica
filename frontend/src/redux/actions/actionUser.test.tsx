@@ -14,7 +14,7 @@ describe('Given an actionUser', () => {
     const email = 'pepe@pepe.com';
     const password = 'hola';
     const data = { email: 'pepe@pepe.com', password: 'hola' };
-    axios.mockResolvedValue(data);
+    (axios as unknown as jest.Mock).mockResolvedValue(data);
 
     await getUser(email, password)(dispatch);
 
@@ -23,18 +23,30 @@ describe('Given an actionUser', () => {
       user: data
     });
   });
+  test('return a call to dispatch', async () => {
+    const email = 'pepe@pepe.com';
+    const password = 'hola';
+    const dispatch = jest.fn();
+    await getUser(email, password)(dispatch);
+    expect(dispatch).toHaveBeenCalled();
+  });
 });
 
 describe('Given an actionUser', () => {
   test('loadProducts should return an action, with an actionType POST_LOGOUT', async () => {
     const dispatch = jest.fn();
-    axios.mockResolvedValue();
+    (axios as unknown as jest.Mock).mockResolvedValue();
 
     await logout()(dispatch);
 
     expect(dispatch).toHaveBeenCalledWith({
       type: actionTypes.POST_LOGOUT
     });
+  });
+  test('return a call to dispatch', async () => {
+    const dispatch = jest.fn();
+    await logout()(dispatch);
+    expect(dispatch).toHaveBeenCalled();
   });
 });
 

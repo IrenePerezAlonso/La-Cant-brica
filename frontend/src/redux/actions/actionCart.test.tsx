@@ -5,7 +5,7 @@ import {
 
 describe('Given a Cart action reducer function and an ADD cart payload', () => {
   test('Should add the selected product into the cart component', () => {
-    const product: any = { name: 'Merluza' };
+    const product = { name: 'Merluza' };
     const result = addToCart(product);
 
     expect(result).toEqual({

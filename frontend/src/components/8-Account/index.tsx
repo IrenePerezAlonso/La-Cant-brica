@@ -52,14 +52,40 @@ const Account: FC<AccountProps> = ({ user }) => {
           </p>
           <div className="account-data__addres">
             <form className="account-acount__form">
-              <input type="text" id="address" className="address-input" placeholder="añada una dirección" onChange={handleAddress} />
+              <input
+                type="text"
+                id="address"
+                className="address-input"
+                data-testid="address-input"
+                placeholder="añada una dirección"
+                onChange={handleAddress}
+              />
             </form>
-            <button type="button" className="button-address" onClick={sendData}>añadir dirección</button>
+            <button
+              type="button"
+              className="button-address"
+              data-testid="button-address"
+              onClick={sendData}
+            >
+              añadir dirección
+            </button>
           </div>
-          <button type="button" className="button-logout" onClick={() => dispatch(logout())}>Logout</button>
+          <button
+            type="button"
+            className="button-logout"
+            data-testid="button-logout"
+            onClick={() => dispatch(logout())}
+          >
+            Logout
+          </button>
         </div>
         <Link to="/tienda">
-          <button type="button" className="button-tienda">Ir a la tienda</button>
+          <button
+            type="button"
+            className="button-tienda"
+          >
+            Ir a la tienda
+          </button>
         </Link>
       </div>
     </>

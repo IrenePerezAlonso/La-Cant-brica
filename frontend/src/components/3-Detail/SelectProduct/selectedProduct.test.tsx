@@ -1,34 +1,19 @@
 import React from 'react';
-import ProductDetail from './index';
 import { screen, render, fireEvent } from '../../../test-utils';
-import actionTypes from '../../../redux/actions/actionTypes';
-import { addToCart } from '../../../redux/actions/actionCart';
+import ProductDetail from './index';
 
 describe('Given a ProductDetail component', () => {
-  describe('User can send a comment', () => {
-    const comment = 'Lo quiero en rodajas';
-
-    fireEvent.change(screen.getByTestId('comment'), {
-      target: { value: comment }
+  test('And when add to cart button is clicked addToCart function is invoked', async () => {
+    render(<ProductDetail />);
+    fireEvent.click(screen.getByTestId('buttons-detail'), {
+      target: { value: 'Bacalao' }
     });
-
-    expect(screen.getByTestId('comment')).toContainElement(
-      screen.getByText(comment)
-    );
   });
-  describe('And add to cart button is clicked', () => {
-    test('addToCart function is invoked', () => {
-      const button = screen.getByTestId('buttons-add-to-cart');
-      addToCart.mockReturnValue({
-        type: actionTypes.ADD_PRODUCTS_TO_CART,
-        product: {
-          name: 'Merluza', type: 'fish'
-        }
-      });
 
-      fireEvent.click(button);
-
-      expect(addToCart).toHaveBeenCalledTimes(1);
+  test('And when the onChange of the input is used setNotes fruncion is invoked', () => {
+    render(<ProductDetail />);
+    fireEvent.change(screen.getByTestId('comment'), {
+      target: { value: 'Bacalao' }
     });
   });
 });

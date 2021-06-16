@@ -59,6 +59,7 @@ const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
                               type="button"
                               className="elements-button__res"
                               id={item?._id}
+                              data-testid="elements-button__res"
                               onClick={() => {
                                 if (item.quantity === 0) {
                                   dispatch(deleteFromCart(item._id));
@@ -73,6 +74,7 @@ const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
                               type="button"
                               className="elements-button__sum"
                               id={item?._id}
+                              data-testid="elements-button__sum"
                               onClick={() => {
                                 dispatch(addToCart(item));
                               }}
@@ -83,6 +85,7 @@ const Cart: FC<CartProps> = ({ cart, dispatch, user }) => {
                           <button
                             type="button"
                             className="list-info__elements-delete"
+                            data-testid="list-info__elements-delete"
                             onClick={() => dispatch(deleteFromCart(item._id))}
                           >
                             Eliminar

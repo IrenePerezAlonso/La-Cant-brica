@@ -2,7 +2,7 @@
 import React, { useEffect, FC } from 'react';
 import { useDispatch } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import loadProducts from '../../redux/actions/actionCreator';
+import { loadProducts } from '../../redux/actions/actionCreator';
 import FishList from './Fish/index';
 import ShellfishList from './Shellfish/index';
 import CephalopodList from './Cephalopod/index';

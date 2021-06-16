@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 export default interface Users {
     token: string,
     refreshToken: string,

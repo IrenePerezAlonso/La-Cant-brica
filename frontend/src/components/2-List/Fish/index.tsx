@@ -3,7 +3,7 @@ import React, { useEffect, FC } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import loadProducts from '../../../redux/actions/actionCreator';
+// import loadProducts from '../../../redux/actions/actionCreator';
 import Products from '../../../types/Products';
 import '../list.css';
 
@@ -12,16 +12,19 @@ type ListFishProps = {
     dispatch: any
 }
 
-const FishList: FC<ListFishProps> = ({ products, dispatch }) => {
+const FishList: FC<ListFishProps> = ({ products /* dispatch */ }) => {
+  // eslint-disable-next-line no-debugger
+  debugger;
   useEffect(() => {
-    dispatch(loadProducts());
+    // dispatch(loadProducts());
+    console.log('hola2');
   }, []);
 
   const WHITE = 'white';
   const BLUE = 'blue';
 
-  const whiteList = products.filter((fish) => fish.subType === WHITE);
-  const blueList = products.filter((fish) => fish.subType === BLUE);
+  const whiteList = products?.filter((fish) => fish.subType === WHITE);
+  const blueList = products?.filter((fish) => fish.subType === BLUE);
 
   return (
     <>
