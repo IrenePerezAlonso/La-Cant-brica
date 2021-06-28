@@ -6,21 +6,19 @@ const config: Object = {
   method: 'get',
   url: 'http://localhost:2021/api/products',
   headers: {
-    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzY1MzIxNCwiZXhwIjoxNjI0MTMzMjE0fQ.guYx67lKdJtceSCnbC0x7AkQGViZqHDiUBsLAMlau4I'
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyNDI4MTQ5NiwiZXhwIjoxNjI0NzYxNDk2fQ.PKK4V0TphNqluxHwB9sI-ufI2ATMDrtnv7sUQoJAeGM'
   }
 };
 
 const token = {
   headers: {
-    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyMzY1MzIxNCwiZXhwIjoxNjI0MTMzMjE0fQ.guYx67lKdJtceSCnbC0x7AkQGViZqHDiUBsLAMlau4I'
+    Authorization: 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwYmYzNTI4ODBkZTM4NTNkMGEzMGY0MiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIn0sImlhdCI6MTYyNDI4MTQ5NiwiZXhwIjoxNjI0NzYxNDk2fQ.PKK4V0TphNqluxHwB9sI-ufI2ATMDrtnv7sUQoJAeGM'
   }
 };
 
 const url = 'http://localhost:2021/api/products';
 
 export function loadProducts() {
-  // eslint-disable-next-line no-debugger
-  debugger;
   return async (dispatch: Dispatch) => {
     try {
       const { data } = await axios(config);

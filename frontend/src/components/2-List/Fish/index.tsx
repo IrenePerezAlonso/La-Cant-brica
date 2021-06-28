@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, FC } from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -9,17 +9,9 @@ import '../list.css';
 
 type ListFishProps = {
     products: Products [],
-    dispatch: any
 }
 
-const FishList: FC<ListFishProps> = ({ products /* dispatch */ }) => {
-  // eslint-disable-next-line no-debugger
-  debugger;
-  useEffect(() => {
-    // dispatch(loadProducts());
-    console.log('hola2');
-  }, []);
-
+const FishList: FC<ListFishProps> = ({ products }) => {
   const WHITE = 'white';
   const BLUE = 'blue';
 
